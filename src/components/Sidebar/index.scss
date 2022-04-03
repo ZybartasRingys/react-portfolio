@@ -1,0 +1,118 @@
+// Sidebar
+
+.nav-bar {
+  background-color: #181818;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  // sidebar nav
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      // icon link hover
+
+      &:hover {
+        color: #00ffff;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      // icon link after
+
+      &:after {
+        content: '';
+        font-size: 10px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3 ease-out;
+      }
+      // home link icon
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+    // about link icon
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    // contact link icon
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #00ffff;
+      }
+    }
+  }
+
+  // social icons
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+      }
+
+      &:hover svg {
+        color: #00ffff;
+      }
+    }
+  }
+}
