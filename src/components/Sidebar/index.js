@@ -1,7 +1,12 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faCode,
+} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -49,6 +54,16 @@ const Sidebar = () => (
           href="https://github.com/ZybartasRingys"
         >
           <FontAwesomeIcon icon={faGithub} />
+        </a>
+      </li>
+
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/ZybartasRingys"
+        >
+          <FontAwesomeIcon icon={faCode} />
         </a>
       </li>
     </ul>

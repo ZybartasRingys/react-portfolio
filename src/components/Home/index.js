@@ -8,18 +8,17 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           Hello, nice to meet you ! <br /> I'm <span className="z">Ž</span>
-          ybartas <br /> I'm front-end coder
+          ybartas
         </h1>
+        <p>Front-end coder / JavaScript'er / Programming lover </p>
 
         <h2>
-          I really enjoy learning new things about web development. <br />
           I'm looking for a chance to start my developer carrer or any project!{' '}
         </h2>
-
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
       </div>
+      <Link to="/contact" className="flat-button">
+        CONTACT ME
+      </Link>
     </div>
   )
 }
