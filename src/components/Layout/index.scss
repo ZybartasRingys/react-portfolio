@@ -39,23 +39,22 @@
 }
 
 .about-page {
-  border: 1px solid red;
   .text-zone {
-    border: 1px solid red;
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    width: 70%;
+    width: 40%;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
 
     h1 {
+      margin-bottom: 60px;
       color: white;
       font-size: 53px !important;
       font-family: 'Coolvetica';
-      letter-spacing: 3px;
+      letter-spacing: 6px;
 
       &::before {
         content: '<h1>';
@@ -83,7 +82,9 @@
     }
 
     p {
-      font-size: 22px;
+      font-size: 20px;
+      line-height: 24px;
+      color: white;
     }
   }
 }
