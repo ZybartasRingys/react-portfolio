@@ -58,7 +58,7 @@ const Home = () => {
           />
         </h1>
 
-        <p>Front-end coder / JavaScript'er / Programming lover </p>
+        <p>Front-end coder / JavaScript'er / Programming learner </p>
 
         <h2>
           I'm looking for a chance to start my developer carrer or any project!{' '}

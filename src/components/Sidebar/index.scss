@@ -76,6 +76,12 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
     // contact link icon
 
     a.contact-link {
