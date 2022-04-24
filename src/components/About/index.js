@@ -6,10 +6,14 @@ import Loader from 'react-loaders'
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  useEffect(() => {
+  const myFunction = async () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
+    }, 5000)
+  }
+
+  useEffect(() => {
+    myFunction()
   }, [])
   return (
     <>

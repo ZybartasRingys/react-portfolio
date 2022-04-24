@@ -15,10 +15,14 @@ import {
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  useEffect(() => {
+  const myFunction = async () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 5000)
+  }
+
+  useEffect(() => {
+    myFunction()
   }, [])
   return (
     <>
@@ -52,11 +56,11 @@ const Skills = () => {
             />
           </h1>
           <div className="skills-zone">
-            <h2 class="things">
+            <h2 className="things">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
               ut.
             </h2>
-            <ul class="skills-list">
+            <ul className="skills-list">
               <li>
                 I know how to build some things with HTML CSS and JAVASCRIPT.
               </li>
@@ -84,7 +88,7 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* <Loader type="pacman" /> */}
+      <Loader type="pacman" />
     </>
   )
 }

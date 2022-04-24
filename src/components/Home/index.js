@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
 import Loader from 'react-loaders'
+import React from 'react'
 
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
+  const myFunction = async () => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 5500)
+  }
   const greetingArray = [
     'H',
     'e',
@@ -38,10 +44,9 @@ const Home = () => {
   const nameArray = ['i', "'", 'm', '', 'Ž', 'y', 'b', 'a', 'r', 't', 'a', 's']
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 5500)
+    myFunction()
   }, [])
+
   return (
     <>
       <div className="container home-page">
@@ -70,8 +75,6 @@ const Home = () => {
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
-
-        <Logo />
       </div>
 
       <Loader type="pacman" />

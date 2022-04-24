@@ -17,9 +17,10 @@ const Sidebar = () => (
     </Link>
 
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/">
+      <NavLink activeclassname="active" to="/">
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
       </NavLink>
+
       <NavLink
         exact="true"
         activeclassname="active"
@@ -35,7 +36,7 @@ const Sidebar = () => (
         exact="true"
         activeclassname="active"
         className="contact-link"
-        to="/contact"
+        to="/Contact"
       >
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
