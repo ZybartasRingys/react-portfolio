@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
   faReact,
   faNode,
@@ -68,23 +69,45 @@ const Skills = () => {
                 How to use SCSS as preproccesor and Bootstrap as CSS framework.
               </li>
               <li>Principles of responsive web design.</li>
-              <li>Some knowlegde and experience of React.</li>
+              <li>Some knowlegde and experience working with React.</li>
               <li>
                 Basic knowlegde and experience working with Node Js and MongoDB
               </li>
               <li>How to use git and github</li>
               <li>Figma</li>
             </ul>
-          </div>
 
-          <div className="icons">
-            <FontAwesomeIcon icon={faJs} color="#5ED4F4" />
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            <FontAwesomeIcon icon={faNode} color="#5ED4F4" />
-            <FontAwesomeIcon icon={faCss3} color="#5ED4F4" />
-            <FontAwesomeIcon icon={faGitAlt} color="#5ED4F4" />
-            <FontAwesomeIcon icon={faHtml5} color="#5ED4F4" />
+            <div className="skills-links">
+              <p>
+                You can my completed front-end projects @
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.frontendmentor.io/profile/ZybartasRingys"
+                  className="link"
+                >
+                  Frontendmentor
+                </a>
+                and more of my code @
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.frontendmentor.io/profile/ZybartasRingys"
+                  className="link"
+                >
+                  Github
+                </a>
+              </p>
+            </div>
           </div>
+        </div>
+        <div className="icons">
+          <FontAwesomeIcon icon={faJs} className="icon" color="#5ED4F4" />
+          <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          <FontAwesomeIcon icon={faNode} color="#5ED4F4" />
+          <FontAwesomeIcon icon={faCss3} color="#5ED4F4" />
+          <FontAwesomeIcon icon={faGitAlt} color="#5ED4F4" />
+          <FontAwesomeIcon icon={faHtml5} color="#5ED4F4" />
         </div>
       </div>
 

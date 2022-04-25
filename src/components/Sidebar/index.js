@@ -48,6 +48,7 @@ const Sidebar = () => (
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/%C5%BEybartas-ringys/"
+          className="icon"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
@@ -57,6 +58,7 @@ const Sidebar = () => (
           target="_blank"
           rel="noreferrer"
           href="https://github.com/ZybartasRingys"
+          className="icon"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -66,7 +68,8 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/ZybartasRingys"
+          href="https://www.frontendmentor.io/profile/ZybartasRingys"
+          className="icon"
         >
           <FontAwesomeIcon icon={faCode} />
         </a>

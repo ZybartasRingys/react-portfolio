@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
-        <div className="text-zone">
+        <div className="text-zone__contact">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}

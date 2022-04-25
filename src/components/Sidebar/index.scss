@@ -119,6 +119,8 @@
 
       &:hover svg {
         color: #1ba098;
+        transition: all ease-out 0.7s;
+        transform: translateY(-5px);
       }
     }
   }

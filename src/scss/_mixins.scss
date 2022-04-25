@@ -1,0 +1,33 @@
+// main h1 mixin
+
+@mixin mainHeading {
+  margin-bottom: 60px;
+  color: white;
+  font-size: 53px !important;
+  font-family: 'Coolvetica';
+  letter-spacing: 6px;
+
+  &::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -30px;
+    left: -50px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}

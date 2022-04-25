@@ -1,3 +1,15 @@
+.text-zone__contact {
+  border: 1px solid red;
+  position: absolute;
+  left: 13%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 50%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
+}
+
 .contact-form {
   width: 65%;
   margin-top: 20px;
@@ -70,13 +82,9 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+    cursor: pointer;
   }
 }
-
-//text-zone contact
-// .text-zone__contact {
-//   width: 40%;
-// }
 
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
