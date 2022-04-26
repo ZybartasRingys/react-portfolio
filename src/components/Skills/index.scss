@@ -1,3 +1,5 @@
+@import '/src/scss/mixins';
+
 .skills-page {
   .text-zone {
     position: absolute;
@@ -10,35 +12,7 @@
     max-height: 90%;
 
     h1 {
-      margin-bottom: 60px;
-      color: white;
-      font-size: 53px !important;
-      font-family: 'Coolvetica';
-      letter-spacing: 6px;
-
-      &::before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -30px;
-        left: -60px;
-        opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
-
-      &::after {
-        content: '</h1>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: 60px;
-        margin-left: 20px;
-        opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
+      @include mainHeading;
     }
 
     p {
@@ -67,7 +41,7 @@
       position: absolute;
       margin-top: -30px;
       left: -60px;
-      opacity: 0.8;
+      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -79,7 +53,7 @@
       position: absolute;
       margin-top: 30px;
       margin-left: 10px;
-      opacity: 0.8;
+      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
   }
@@ -101,7 +75,7 @@
       position: absolute;
       margin-top: -60px;
       left: -40px;
-      opacity: 0.8;
+      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -113,7 +87,7 @@
       position: absolute;
       left: -40px;
       margin-top: 10px;
-      opacity: 0.8;
+      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -130,7 +104,7 @@
         position: absolute;
         margin-top: -20px;
         left: 5px;
-        opacity: 0.8;
+        // opacity: 0.8;
         animation: fadeIn 1s 1.7s backwards;
       }
 
@@ -142,7 +116,7 @@
         position: absolute;
         margin-top: 22px;
         margin-left: 15px;
-        opacity: 0.8;
+        // opacity: 0.8;
         animation: fadeIn 1s 1.7s backwards;
       }
     }
@@ -151,7 +125,7 @@
   .skills-links {
     margin-top: 120px;
     p {
-      font-size: 15px;
+      font-size: 17px;
       &::before {
         content: '<p>';
         font-family: 'La Belle Aurore';
@@ -179,20 +153,27 @@
   }
 
   .icons {
-    border: 1px solid red;
     position: absolute;
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
     width: 30%;
-    vertical-align: middle;
-    display: table-cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 75%;
     max-height: 90%;
 
     .icon {
       height: 50px;
       width: 50px;
+      margin-right: 20px;
     }
   }
+}
+
+.link {
+  color: #ffd700;
+  font-size: 20px;
+  font-family: 'Coolvetica';
 }

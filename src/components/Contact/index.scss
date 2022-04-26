@@ -1,18 +1,49 @@
+@import '/src/scss/mixins';
+
 .text-zone__contact {
-  border: 1px solid red;
   position: absolute;
   left: 13%;
   top: 40%;
   transform: translateY(-50%);
-  width: 50%;
+  width: 40%;
   vertical-align: middle;
   display: table-cell;
   max-height: 90%;
+
+  h1 {
+    @include mainHeading;
+  }
 }
 
 .contact-form {
-  width: 65%;
+  width: 70%;
   margin-top: 20px;
+
+  form {
+    &::before {
+      content: '<form>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -30px;
+      left: -60px;
+      // opacity: 0.8;
+      animation: fadeIn 1s 1.7s backwards;
+    }
+
+    &::after {
+      content: '</form>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 20px;
+      right: 180px;
+      // opacity: 0.8;
+      animation: fadeIn 1s 1.7s backwards;
+    }
+  }
 
   ul {
     padding: 0;
@@ -84,13 +115,51 @@
     margin-right: 10px;
     cursor: pointer;
   }
+
+  p {
+    font-size: 15px;
+    opacity: 0.8;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  .contact-info {
+    margin-top: 60px;
+    &::before {
+      content: '<p>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -30px;
+      left: -60px;
+      // opacity: 0.8;
+      animation: fadeIn 1s 1.7s backwards;
+    }
+
+    &::after {
+      content: '</p>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 20px;
+      right: 180px;
+      // opacity: 0.8;
+      animation: fadeIn 1s 1.7s backwards;
+    }
+  }
 }
 
 .map-wrap {
+  position: absolute;
+  right: 3%;
+  top: 55%;
+  transform: translateY(-50%);
   background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 50%;
-  height: 115%;
+  width: 45%;
+  height: 95%;
   margin-top: -3%;
 }
 

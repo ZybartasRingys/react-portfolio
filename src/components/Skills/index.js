@@ -11,6 +11,7 @@ import {
   faGitAlt,
   faHtml5,
   faJs,
+  faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Skills = () => {
@@ -79,7 +80,7 @@ const Skills = () => {
 
             <div className="skills-links">
               <p>
-                You can my completed front-end projects @
+                You can find my completed front-end projects @
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -102,12 +103,13 @@ const Skills = () => {
           </div>
         </div>
         <div className="icons">
-          <FontAwesomeIcon icon={faJs} className="icon" color="#5ED4F4" />
-          <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-          <FontAwesomeIcon icon={faNode} color="#5ED4F4" />
-          <FontAwesomeIcon icon={faCss3} color="#5ED4F4" />
-          <FontAwesomeIcon icon={faGitAlt} color="#5ED4F4" />
-          <FontAwesomeIcon icon={faHtml5} color="#5ED4F4" />
+          <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
+          <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
+          <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
+          <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
+          <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
+          <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
+          <FontAwesomeIcon icon={faFigma} className="icon" color="#f34f29" />
         </div>
       </div>
 
