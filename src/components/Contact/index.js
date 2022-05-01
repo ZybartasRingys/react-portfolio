@@ -10,14 +10,14 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
-  const myFunction = async () => {
+  const setAnimateClass = async () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 5000)
   }
 
   useEffect(() => {
-    myFunction()
+    setAnimateClass()
   }, [])
 
   const sendEmail = (e) => {

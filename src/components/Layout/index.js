@@ -1,11 +1,14 @@
 import './index.scss'
 import Sidebar from '../Sidebar'
 import { Outlet } from 'react-router-dom'
+import MobileNav from '../MobileNav'
 
 const Layout = () => {
   return (
     <div className="App">
       <Sidebar />
+      <MobileNav />
+
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 

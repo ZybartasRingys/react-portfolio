@@ -1,0 +1,117 @@
+.mobile-nav-bar {
+  background-color: #181818;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .page-links {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    font-size: 22px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    // icon link hover
+
+    &:hover {
+      color: #1ba098;
+
+      svg {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    // icon link after
+
+    &:after {
+      content: '';
+      font-size: 8px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3 ease-out;
+    }
+    // home link icon
+    &:first-child {
+      &::after {
+        content: 'HOME';
+      }
+    }
+  }
+  // about link icon
+
+  a.about-link {
+    &:after {
+      content: 'ABOUT';
+    }
+  }
+
+  a.skills-link {
+    &:after {
+      content: 'SKILLS';
+    }
+  }
+
+  // contact link icon
+
+  a.contact-link {
+    &:after {
+      content: 'CONTACT';
+    }
+  }
+
+  a.active {
+    svg {
+      color: #1ba098;
+    }
+  }
+}
+
+/* hamburger*/
+.hamburger {
+  display: none;
+}
+
+/* mobile nav links*/
+
+.mobile-nav-links {
+  height: 25px;
+  width: 25px;
+}
+
+/* social links*/
+
+.social-links {
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+    }
+  }
+}

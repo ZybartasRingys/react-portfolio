@@ -1,3 +1,5 @@
+@import '/src/scss/mixins';
+
 .home-page {
   .text-zone {
     position: absolute;
@@ -9,12 +11,7 @@
   }
 
   h1 {
-    font-size: 58px;
-    line-height: 84px;
-    color: #fff;
-    margin: 0;
-    font-family: 'Coolvetica';
-    letter-spacing: 2px;
+    @include mainHeading;
 
     &::before {
       content: '<h1>';
@@ -135,6 +132,24 @@
     &:hover {
       background: #1ba098;
       color: #333;
+    }
+  }
+}
+
+/* Home mobile  */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .home-page {
+    width: 100% !important;
+    max-width: 767px !important;
+    border: 5px solid red;
+
+    .text-zone {
+      left: 18%;
+
+      h1 {
+        font-size: 28px !important;
+      }
     }
   }
 }
