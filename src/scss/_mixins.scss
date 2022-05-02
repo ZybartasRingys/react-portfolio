@@ -31,3 +31,37 @@
     animation: fadeIn 1s 1.7s backwards;
   }
 }
+
+// mobile h1 mixin
+
+@mixin mainHeadingMobile {
+  margin-bottom: 60px;
+  color: white;
+  font-size: 26px !important;
+  font-family: 'Coolvetica';
+  letter-spacing: 4px;
+
+  &::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -30px;
+    left: -50px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}

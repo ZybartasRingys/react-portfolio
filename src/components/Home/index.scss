@@ -142,13 +142,27 @@
   .home-page {
     width: 100% !important;
     max-width: 767px !important;
-    border: 5px solid red;
 
     .text-zone {
       left: 18%;
+
       h1 {
-        font-size: 28px !important;
+        @include mainHeadingMobile;
       }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    // contact btn
+
+    .flat-button {
+      left: 20% !important;
     }
   }
 }

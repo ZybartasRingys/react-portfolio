@@ -65,12 +65,12 @@ const Home = () => {
             />
           </h1>
 
-          <p>Front-end coder / JavaScript'er / Programming learner </p>
+          <h2>Front-end coder / JavaScript'er / Programming learner </h2>
 
-          <h2>
+          <p>
             I'm looking for a chance to start my developer carrer or any
-            project!{' '}
-          </h2>
+            project!
+          </p>
         </div>
         <Link to="/contact" className="flat-button">
           CONTACT ME
