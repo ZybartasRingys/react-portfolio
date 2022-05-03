@@ -108,3 +108,27 @@
     }
   }
 }
+
+/* About mobile  */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .about-page {
+    .text-zone {
+      margin-top: 60px;
+      width: 80%;
+      border: 1px solid red;
+
+      h1 {
+        @include mainHeadingMobile;
+        margin-top: 70px;
+      }
+
+      .about-text {
+        margin-top: 0px !important;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -39,8 +39,7 @@ const About = () => {
             </p>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo illo aperiam alias, aliquam ad natus vel magnam ipsam
-              quibusdam consectetur.
+              Explicabo illo aperiam alias, aliquam ad natus vel.
             </p>
           </div>
         </div>
