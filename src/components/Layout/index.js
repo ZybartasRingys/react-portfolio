@@ -10,11 +10,16 @@ const Layout = () => {
       <MobileNav />
 
       <div className="page">
-        <span className="tags top-tag-html">&lt;html&gt;</span>
-        <span className="tags top-tags">&lt;body&gt;</span>
+        <div className="top-tags-container">
+          <span className="tags top-tags-html">&lt;html&gt;</span>
+          <span className="tags top-tags">&lt;body&gt;</span>
+        </div>
 
         <Outlet />
-        <span className="tags bottom-tags"> &lt;/body&gt; </span>
+        <div className="bottom-tags-container">
+          <span className="tags bottom-tags">&lt;/html&gt;</span>
+          <span className="tags bottom-tags"> &lt;/body&gt; </span>
+        </div>
       </div>
     </div>
   )

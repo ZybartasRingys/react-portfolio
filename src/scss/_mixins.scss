@@ -37,7 +37,7 @@
 @mixin mainHeadingMobile {
   margin-bottom: 60px;
   color: white;
-  font-size: 26px !important;
+  font-size: 25px !important;
   font-family: 'Coolvetica';
   letter-spacing: 4px;
 
@@ -47,8 +47,8 @@
     color: #ffd700;
     font-size: 15px;
     position: absolute;
-    margin-top: -30px;
-    left: -50px;
+    margin-top: -20px;
+    left: -49px;
     opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
@@ -59,7 +59,76 @@
     color: #ffd700;
     font-size: 15px;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-left: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}
+
+//mobile paragraph mixin
+
+@mixin mobileParagraph {
+  color: #fff;
+  font-size: 15px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  margin-top: 50px;
+
+  &::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -20px;
+    left: -38px;
+    opacity: 1;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 1;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}
+
+@mixin mobileh2 {
+  font-family: 'Coolvetica';
+  margin-top: 160px;
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  animation: fadeIn 1s 1.8s backwards;
+
+  &::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -20px;
+    left: -40px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 30px;
     margin-left: 20px;
     opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
