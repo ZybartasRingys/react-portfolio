@@ -5,8 +5,8 @@
 }
 
 .top-tags {
-  bottom: auto;
   top: 35px;
+  border: 1px solid red;
 }
 
 .tags {
@@ -36,4 +36,17 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+}
+
+/* Layout mobile  */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .top-tags {
+    left: 20px;
+    top: 85px;
+  }
+
+  .bottom-tags {
+    left: 20px;
+  }
 }
