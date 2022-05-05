@@ -36,7 +36,7 @@
             position: absolute;
             margin-top: -30px;
             left: -50px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
 
@@ -48,7 +48,7 @@
             position: absolute;
             margin-top: 20px;
             margin-left: 20px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
         }
@@ -62,7 +62,7 @@
             position: absolute;
             margin-top: -30px;
             left: -50px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
 
@@ -74,7 +74,7 @@
             position: absolute;
             margin-top: 20px;
             margin-left: 20px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
         }
@@ -88,7 +88,7 @@
             position: absolute;
             margin-top: -30px;
             left: -50px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
 
@@ -100,7 +100,7 @@
             position: absolute;
             margin-top: 20px;
             margin-left: 20px;
-            opacity: 0.8;
+            // opacity: 0.8;
             animation: fadeIn 1s 1.7s backwards;
           }
         }
@@ -114,8 +114,9 @@
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .about-page {
     .text-zone {
+      left: 25%;
       margin-top: 60px;
-      width: 80%;
+      width: 70%;
       border: 1px solid red;
 
       h1 {
