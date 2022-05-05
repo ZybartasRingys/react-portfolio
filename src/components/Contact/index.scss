@@ -196,3 +196,19 @@
     }
   }
 }
+
+/* Contact mobile  */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .contact-page {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .text-zone__contact {
+      border: 2px solid yellow;
+    }
+  }
+}
