@@ -4,10 +4,6 @@
   position: absolute;
 }
 
-.top-tags {
-  top: 35px;
-}
-
 .tags {
   color: #ffd700;
   opacity: 0.8;
@@ -16,8 +12,28 @@
   font-family: 'La Belle Aurore';
 }
 
-.bottom-tag-html {
-  margin-left: -20px;
+.top-tags {
+  top: 35px;
+
+  &:nth-of-type(2n) {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+
+.bottom-tags {
+  position: absolute;
+
+  &:nth-of-type(1n) {
+    position: absolute;
+    bottom: 40px !important;
+  }
+
+  &:nth-of-type(2n) {
+    position: absolute;
+    bottom: 65px !important;
+    margin-left: 10px;
+  }
 }
 
 .container {
