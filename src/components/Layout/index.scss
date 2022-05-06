@@ -26,12 +26,12 @@
 
   &:nth-of-type(1n) {
     position: absolute;
-    bottom: 40px !important;
+    bottom: 40px;
   }
 
   &:nth-of-type(2n) {
     position: absolute;
-    bottom: 65px !important;
+    bottom: 65px;
     margin-left: 10px;
   }
 }
@@ -61,6 +61,6 @@
 
   .bottom-tags {
     left: 20px;
-    bottom: 60px;
+    bottom: 10px;
   }
 }
