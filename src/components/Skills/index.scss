@@ -187,10 +187,10 @@
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .skills-page {
     display: flex;
+    flex-direction: column;
 
     .text-zone {
       transform: translateY(-55%);
-      border: 1px solid red;
       width: 66%;
       left: 23%;
       height: 70%;
@@ -208,7 +208,8 @@
       }
 
       .skills-list {
-        font-size: 7px;
+        display: none;
+        font-size: 12px;
 
         li {
           @include mobileLi;
@@ -218,7 +219,14 @@
 
     // mobile icons
     .icons {
-      display: none;
+      height: 50%;
+      width: 100%;
+      top: 60%;
+      right: 0 !important;
+      transform: translateY(-50%);
+      left: 23% !important;
+
+      // display: none;
       .icon {
         height: 25px;
         width: 25px;

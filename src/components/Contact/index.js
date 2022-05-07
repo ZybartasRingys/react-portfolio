@@ -97,20 +97,22 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="info-map">
-          Žybartas Ringys,
-          <br />
-          Lithuania,
-          <br />
-          <span>DeveloperZR92@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[55.891686, 21.256541]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[55.891686, 21.256541]}>
-              <Popup>Try to find me there :) </Popup>
-            </Marker>
-          </MapContainer>
+        <div className="map">
+          <div className="info-map">
+            Žybartas Ringys,
+            <br />
+            Lithuania,
+            <br />
+            <span>DeveloperZR92@gmail.com</span>
+          </div>
+          <div className="map-wrap">
+            <MapContainer center={[55.891686, 21.256541]} zoom={13}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[55.891686, 21.256541]}>
+                <Popup>Try to find me there </Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />

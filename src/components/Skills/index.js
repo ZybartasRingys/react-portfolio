@@ -60,10 +60,6 @@ const Skills = () => {
             />
           </h1>
           <div className="skills-zone">
-            <h2 className="things">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-              ut.
-            </h2>
             <ul className="skills-list">
               <li>
                 I know how to build some things with HTML CSS and JAVASCRIPT.
