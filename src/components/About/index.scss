@@ -114,10 +114,9 @@
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .about-page {
     .text-zone {
+      top: 55%;
       left: 25%;
-      margin-top: 20px;
       width: 70%;
-      transform: translateY(-45%);
 
       h1 {
         @include mainHeadingMobile;
@@ -126,7 +125,8 @@
       .about-text {
         margin-top: 0px !important;
         p {
-          font-size: 14px;
+          @include mobileParagraph;
+          font-size: 11px !important;
         }
       }
     }

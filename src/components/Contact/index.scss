@@ -208,12 +208,12 @@
 
     .text-zone__contact {
       width: 100% !important;
-      top: 52%;
+      top: 55%;
       left: 23%;
 
       h1 {
         @include mainHeadingMobile;
-        margin-bottom: 20px !important;
+        margin-bottom: 40px !important;
       }
 
       p {
@@ -225,12 +225,36 @@
     .contact-form {
       display: flex;
       flex-direction: column-reverse;
+
+      form {
+        &::before {
+          content: '<form>';
+          font-family: 'La Belle Aurore';
+          color: #ffd700;
+          font-size: 15px;
+          position: absolute;
+          margin-top: -30px;
+          left: -60px;
+          animation: fadeIn 1s 1.7s backwards;
+        }
+
+        &::after {
+          content: '</form>';
+          font-family: 'La Belle Aurore';
+          color: #ffd700;
+          font-size: 15px;
+          position: absolute;
+          margin-top: 20px;
+          right: 100px;
+          animation: fadeIn 1s 1.7s backwards;
+        }
+      }
       ul {
         input {
-          height: 30px !important;
+          height: 25px !important;
         }
         textarea {
-          height: 80px !important;
+          height: 70px !important;
         }
       }
 
