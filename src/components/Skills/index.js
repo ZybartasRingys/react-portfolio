@@ -113,7 +113,6 @@ const Skills = () => {
           <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
           <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
           <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
-          <FontAwesomeIcon icon={faFigma} className="icon" color="#f34f29" />
         </div>
       </div>
 

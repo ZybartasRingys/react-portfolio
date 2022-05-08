@@ -190,10 +190,11 @@
     flex-direction: column;
 
     .text-zone {
-      transform: translateY(-55%);
       width: 66%;
       left: 23%;
-      height: 70%;
+      top: 25%;
+      height: 20%;
+      border: 2px solid black;
 
       h1 {
         @include mainHeadingMobile;
@@ -215,13 +216,21 @@
           @include mobileLi;
         }
       }
+
+      .skills-zone {
+        border: 1px solid red;
+        .skills-links {
+          margin-top: 0 !important;
+        }
+      }
     }
 
     // mobile icons
     .icons {
-      height: 50%;
-      width: 100%;
-      top: 60%;
+      // display: none;
+      height: 10%;
+      width: 65%;
+      top: 70%;
       right: 0 !important;
       transform: translateY(-50%);
       left: 23% !important;
