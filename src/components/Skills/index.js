@@ -11,7 +11,6 @@ import {
   faGitAlt,
   faHtml5,
   faJs,
-  faFigma,
   faBootstrap,
   faSass,
 } from '@fortawesome/free-brands-svg-icons'
