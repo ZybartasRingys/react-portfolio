@@ -91,9 +91,9 @@ const Contact = () => {
             </form>
 
             <p className="contact-info">
-              I am interested in freelance opportunities - especially ambitious
-              or large projects. However, if you have other request or question,
-              don't hesitate to contact me using below form either.
+              I am interested in any opportunities - especially Frontend
+              realated positions. However, if you have other request or
+              question, don't hesitate to contact me using form below.
             </p>
           </div>
         </div>

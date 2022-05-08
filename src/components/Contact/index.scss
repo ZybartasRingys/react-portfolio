@@ -34,7 +34,6 @@
       position: absolute;
       margin-top: -30px;
       left: -60px;
-      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -46,7 +45,6 @@
       position: absolute;
       margin-top: 20px;
       right: 180px;
-      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
   }
@@ -97,12 +95,12 @@
     width: 100%;
     border: 0;
     background: #115173;
-    height: 50px;
+    height: 150px;
     font-size: 16px;
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    min-height: 150px;
+    // min-height: 150px;
   }
 
   .flat-button {
@@ -140,7 +138,6 @@
       position: absolute;
       margin-top: -30px;
       left: -60px;
-      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -152,7 +149,6 @@
       position: absolute;
       margin-top: 20px;
       right: 180px;
-      // opacity: 0.8;
       animation: fadeIn 1s 1.7s backwards;
     }
   }
@@ -212,11 +208,35 @@
 
     .text-zone__contact {
       width: 100% !important;
-      top: 50%;
+      top: 52%;
       left: 23%;
 
       h1 {
         @include mainHeadingMobile;
+        margin-bottom: 20px !important;
+      }
+
+      p {
+        @include mobileParagraph;
+        font-size: 11px;
+      }
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column-reverse;
+      ul {
+        input {
+          height: 30px !important;
+        }
+        textarea {
+          height: 80px !important;
+        }
+      }
+
+      .contact-info {
+        margin-top: 0 !important;
+        margin-bottom: 60px;
       }
     }
 
