@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import MobileSkills from '../MobileSkills'
 
 import {
   faReact,
@@ -90,13 +91,15 @@ const Skills = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.frontendmentor.io/profile/ZybartasRingys"
+                  href="https://github.com/ZybartasRingys"
                   className="link"
                 >
                   Github
                 </a>
               </p>
             </div>
+
+            <MobileSkills />
           </div>
         </div>
         <div className="icons">
