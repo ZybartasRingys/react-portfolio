@@ -14,6 +14,10 @@ const Home = () => {
       setLetterClass('text-animate-hover')
     }, 5500)
   }
+
+  useEffect(() => {
+    myFunction()
+  }, [])
   const greetingArray = [
     'H',
     'e',
@@ -42,10 +46,6 @@ const Home = () => {
   ]
 
   const nameArray = ['i', "'", 'm', '', 'Ž', 'y', 'b', 'a', 'r', 't', 'a', 's']
-
-  useEffect(() => {
-    myFunction()
-  }, [])
 
   return (
     <>

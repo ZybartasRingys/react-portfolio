@@ -7,14 +7,16 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const myFunction = async () => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 5000)
+    }, 5500)
   }
 
   useEffect(() => {
     myFunction()
   }, [])
+
+  const aboutArr = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
   return (
     <>
       <div className="container about-page">
@@ -22,7 +24,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={aboutArr}
               idx={15}
             />
           </h1>

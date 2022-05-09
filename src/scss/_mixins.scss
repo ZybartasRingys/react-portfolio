@@ -32,6 +32,8 @@
   }
 }
 
+/* MOBILE MIXINS*/
+
 // mobile h1 mixin
 
 @mixin mainHeadingMobile {
@@ -45,11 +47,10 @@
     content: '<h1>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     margin-top: -20px;
     left: -49px;
-    opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 
@@ -57,11 +58,10 @@
     content: '</h1>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
-    margin-top: 40px;
-    margin-left: 20px;
-    opacity: 0.8;
+    margin-top: 20px;
+    margin-left: 10px;
     animation: fadeIn 1s 1.7s backwards;
   }
 }
@@ -83,7 +83,6 @@
     position: absolute;
     margin-top: -20px;
     left: -38px;
-    opacity: 1;
     animation: fadeIn 1s 1.7s backwards;
   }
 
@@ -95,7 +94,6 @@
     position: absolute;
     margin-top: 20px;
     margin-left: 20px;
-    opacity: 1;
     animation: fadeIn 1s 1.7s backwards;
   }
 }
@@ -106,7 +104,7 @@
   color: #fff;
   margin-top: 50px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 26px;
   animation: fadeIn 1s 1.8s backwards;
 
@@ -114,11 +112,10 @@
     content: '<h2>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     margin-top: -20px;
     left: -40px;
-    opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 
@@ -126,11 +123,10 @@
     content: '</h2>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     margin-top: 30px;
     margin-left: 20px;
-    opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 }
@@ -142,11 +138,10 @@
     content: '<li>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     margin-top: -20px;
     left: 5px;
-    // opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 
@@ -154,11 +149,10 @@
     content: '</li>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     margin-top: 22px;
     margin-left: 15px;
-    // opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 }

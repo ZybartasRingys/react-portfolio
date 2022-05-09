@@ -42,7 +42,7 @@ const MobileSkills = () => {
     <Carousel
       className="skills-carousel"
       responsive={responsive}
-      autoPlaySpeed={4500}
+      autoPlaySpeed={5000}
       removeArrowOnDeviceType={['tablet', 'mobile']}
       autoPlay={true}
       infinite={true}

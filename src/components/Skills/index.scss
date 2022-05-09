@@ -189,10 +189,9 @@
     flex-direction: column;
 
     .text-zone {
-      width: 66%;
+      width: 58%;
       left: 25%;
-      top: 35%;
-      height: 20%;
+      top: 50%;
 
       h1 {
         @include mainHeadingMobile;
