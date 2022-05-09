@@ -199,10 +199,6 @@
         font-size: 18px !important;
       }
 
-      h2 {
-        @include mobileh2;
-      }
-
       p {
         @include mobileParagraph;
       }

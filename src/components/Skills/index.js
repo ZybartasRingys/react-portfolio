@@ -76,6 +76,8 @@ const Skills = () => {
               <li>Figma</li>
             </ul>
 
+            <MobileSkills />
+
             <div className="skills-links">
               <p>
                 You can find my completed front-end projects @
@@ -98,8 +100,6 @@ const Skills = () => {
                 </a>
               </p>
             </div>
-
-            <MobileSkills />
           </div>
         </div>
         <div className="icons">

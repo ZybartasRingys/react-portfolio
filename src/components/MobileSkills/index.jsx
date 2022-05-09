@@ -42,36 +42,38 @@ const MobileSkills = () => {
     <Carousel
       className="skills-carousel"
       responsive={responsive}
-      //   autoPlaySpeed={3000}
-      //   removeArrowOnDeviceType={['tablet', 'mobile']}
-      //   autoPlay={true}
-      //   infinite={true}
+      autoPlaySpeed={4500}
+      removeArrowOnDeviceType={['tablet', 'mobile']}
+      autoPlay={true}
+      infinite={true}
     >
-      <div className="item1">
+      <div className="item1 carousel-items">
         I know how to build some things with HTML CSS and JAVASCRIPT.
         <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
         <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
         <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
       </div>
-      <div className="item2">
+      <div className="item2 carousel-items">
         How to use SCSS as preproccesor and Bootstrap as CSS framework.
         <FontAwesomeIcon icon={faSass} className="icon" color="#f0db4f" />
         <FontAwesomeIcon icon={faBootstrap} className="icon" color="#f0db4f" />
       </div>
-      <div className="item3">Principles of responsive web design.</div>
-      <div className="item4">
+      <div className="item3 carousel-items">
+        Principles of responsive web design.
+      </div>
+      <div className="item4 carousel-items">
         Some knowlegde and experience working with React.
         <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
       </div>
-      <div className="item5">
+      <div className="item5 carousel-items">
         Basic knowlegde and experience working with Node Js and MongoDB.
         <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
       </div>
-      <div className="item6">
+      <div className="item6 carousel-items">
         How to use git and github
         <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
       </div>
-      <div className="item7">Figma</div>
+      <div className="item7 carousel-items">Figma</div>
     </Carousel>
   )
 }
