@@ -101,20 +101,21 @@ const Skills = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="icons">
-          <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
-          <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
-          <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
-          <FontAwesomeIcon
-            icon={faBootstrap}
-            className="icon"
-            color="#f0db4f"
-          />
-          <FontAwesomeIcon icon={faSass} className="icon" color="#f0db4f" />
-          <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
-          <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
-          <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
+
+          <div className="icons">
+            <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
+            <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
+            <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
+            <FontAwesomeIcon
+              icon={faBootstrap}
+              className="icon"
+              color="#f0db4f"
+            />
+            <FontAwesomeIcon icon={faSass} className="icon" color="#f0db4f" />
+            <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
+            <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
+            <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
+          </div>
         </div>
       </div>
 

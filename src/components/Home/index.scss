@@ -143,3 +143,17 @@
     }
   }
 }
+
+/* Home tablet  */
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .home-page {
+    left: 12%;
+
+    .text-zone {
+      h1 {
+        @include mainHeadingTablet;
+      }
+    }
+  }
+}

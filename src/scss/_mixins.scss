@@ -180,3 +180,36 @@
     animation: fadeIn 1s 1.7s backwards;
   }
 }
+
+/* MOBILE MIXINS END*/
+
+/* Tablet  MIXINS*/
+
+@mixin mainHeadingTablet {
+  color: white;
+  font-size: 43px !important;
+  font-family: 'Coolvetica';
+  letter-spacing: 4px;
+
+  &::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+    left: -49px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}

@@ -63,3 +63,15 @@
     left: 20px;
   }
 }
+
+/* Layout tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .top-tags {
+    left: 13%;
+  }
+
+  .bottom-tags {
+    left: 13%;
+  }
+}

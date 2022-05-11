@@ -237,3 +237,26 @@
     }
   }
 }
+
+/* Skills tablet  */
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .skills-page {
+    left: 12%;
+  }
+
+  .text-zone {
+    width: 65% !important;
+    top: 45% !important;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      @include mainHeadingTablet;
+    }
+
+    .icons {
+      display: none;
+    }
+  }
+}
