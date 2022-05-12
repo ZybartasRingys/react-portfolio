@@ -201,7 +201,7 @@
 
 /* Contact mobile  */
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (max-width: 639px) {
   .contact-page {
     display: flex;
     flex-direction: column;
@@ -277,7 +277,7 @@
 
 /* Contact tablet  */
 
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
+@media only screen and (min-width: 640px) and (max-width: 1007px) {
   .contact-page {
     left: 13%;
 
@@ -297,11 +297,12 @@
       .info-map {
         top: 78%;
         right: 18%;
-        width: 190px;
+        width: 173px;
         font-size: 15px;
+        padding: 5px !important;
 
         span {
-          font-size: 16px;
+          font-size: 14px;
 
           span {
             color: #ffd700;

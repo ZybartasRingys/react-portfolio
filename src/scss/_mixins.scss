@@ -1,4 +1,6 @@
-// main h1 mixin
+/* Dekstop MIXINS*/
+
+// Desktop h1 mixin
 
 @mixin mainHeading {
   margin-bottom: 60px;
@@ -32,7 +34,52 @@
   }
 }
 
-@mixin paragraph {
+// Desktop h2 mixin
+
+@mixin DesktopH2 {
+  font-family: 'Coolvetica';
+  margin-top: 160px;
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  animation: fadeIn 1s 1.8s backwards;
+
+  &::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+    left: -55px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}
+
+// Desktop paragraph mixin
+
+@mixin DesktopParagraph {
+  color: #fff;
+  font-size: 24px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  margin-top: 50px;
+
   &::before {
     content: '<p>';
     font-family: 'La Belle Aurore';
@@ -61,65 +108,41 @@
 // mobile h1 mixin
 
 @mixin mainHeadingMobile {
-  margin-bottom: 60px;
-  color: white;
   font-size: 24px !important;
-  font-family: 'Coolvetica';
-  letter-spacing: 4px;
 
   &::before {
     content: '<h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: -20px;
     left: -49px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 
   &::after {
     content: '</h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: 20px;
     margin-left: 10px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 }
 
+// mobile h2 mixin
+
 @mixin mobileh2 {
-  font-family: 'Coolvetica';
-  margin-top: 160px;
-  color: #fff;
-  margin-top: 50px;
-  font-weight: 400;
   font-size: 13px;
   line-height: 26px;
-  animation: fadeIn 1s 1.8s backwards;
 
   &::before {
     content: '<h2>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: -20px;
     left: -40px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 
   &::after {
     content: '</h2>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: 30px;
     margin-left: 20px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 }
 
@@ -130,28 +153,20 @@
   font-size: 13px;
   opacity: 0.8;
   letter-spacing: 2px;
-  // margin-top: 50px;
 
   &::before {
     content: '<p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px !important;
     position: absolute;
     margin-top: -10px !important;
     left: -35px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 
   &::after {
     content: '</p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px !important;
-    position: absolute;
     margin-top: 10px !important;
     margin-left: 10px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 }
 
@@ -160,24 +175,16 @@
 @mixin mobileLi {
   &::before {
     content: '<li>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: -20px;
     left: 5px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 
   &::after {
     content: '</li>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 13px;
-    position: absolute;
     margin-top: 22px;
     margin-left: 15px;
-    animation: fadeIn 1s 1.7s backwards;
   }
 }
 
@@ -186,30 +193,38 @@
 /* Tablet  MIXINS*/
 
 @mixin mainHeadingTablet {
-  color: white;
-  font-size: 43px !important;
-  font-family: 'Coolvetica';
-  letter-spacing: 4px;
+  font-size: 45px !important;
 
   &::before {
     content: '<h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 20px;
-    position: absolute;
     margin-top: -20px;
-    left: -49px;
-    animation: fadeIn 1s 1.7s backwards;
+    left: -50px;
   }
 
   &::after {
     content: '</h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
     font-size: 20px;
-    position: absolute;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 10px;
-    animation: fadeIn 1s 1.7s backwards;
+  }
+}
+
+// tablet h2 mixin
+
+@mixin tableth2 {
+  font-size: 32px !important;
+  &::before {
+    content: '<h2>';
+    font-size: 20px;
+    margin-top: -20px;
+    left: -50px;
+  }
+
+  &::after {
+    content: '</h2>';
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 }
