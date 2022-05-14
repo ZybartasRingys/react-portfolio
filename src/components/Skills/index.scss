@@ -242,7 +242,7 @@
 
 @media only screen and (min-width: 640px) and (max-width: 1007px) {
   .skills-page {
-    left: 12%;
+    left: 15%;
   }
 
   .text-zone {
@@ -253,6 +253,10 @@
 
     h1 {
       @include mainHeadingTablet;
+    }
+
+    li {
+      @include tabletLi;
     }
 
     .icons {

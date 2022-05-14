@@ -5,7 +5,7 @@
 @mixin mainHeading {
   margin-bottom: 60px;
   color: white;
-  font-size: 53px !important;
+  font-size: 53px;
   font-family: 'Coolvetica';
   letter-spacing: 6px;
 
@@ -193,7 +193,7 @@
 /* Tablet  MIXINS*/
 
 @mixin mainHeadingTablet {
-  font-size: 45px !important;
+  font-size: 40px !important;
 
   &::before {
     content: '<h1>';
@@ -206,7 +206,7 @@
     content: '</h1>';
     font-size: 20px;
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 5px !important;
   }
 }
 
@@ -226,5 +226,69 @@
     font-size: 20px;
     margin-top: 30px;
     margin-left: 20px;
+  }
+}
+
+//tablet paragraph mixin
+
+@mixin tabletParagraph {
+  font-size: 20px !important;
+  &::before {
+    content: '<p>';
+    font-size: 20px !important;
+    position: absolute;
+    margin-top: -10px !important;
+    left: -35px;
+  }
+
+  &::after {
+    content: '</p>';
+    font-size: 20px !important;
+    margin-top: 10px !important;
+    margin-left: 10px;
+  }
+}
+
+// tablet li mixin
+
+@mixin tabletLi {
+  &::before {
+    content: '<li>';
+    font-size: 13px;
+    margin-top: -20px;
+    left: 5px;
+  }
+
+  &::after {
+    content: '</li>';
+    font-size: 13px;
+    margin-top: 22px;
+    margin-left: 5px;
+  }
+}
+
+//tablet form mixin
+
+@mixin tabletForm {
+  &::before {
+    content: '<form>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -20px;
+    left: -60px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</form>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    animation: fadeIn 1s 1.7s backwards;
   }
 }

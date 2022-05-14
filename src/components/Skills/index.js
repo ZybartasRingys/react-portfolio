@@ -61,9 +61,7 @@ const Skills = () => {
           </h1>
           <div className="skills-zone">
             <ul className="skills-list">
-              <li>
-                I know how to build some things with HTML CSS and JAVASCRIPT.
-              </li>
+              <li>I know how to build things with HTML CSS and JAVASCRIPT.</li>
               <li>
                 How to use SCSS as preproccesor and Bootstrap as CSS framework.
               </li>
@@ -73,7 +71,7 @@ const Skills = () => {
                 Basic knowlegde and experience working with Node Js and MongoDB
               </li>
               <li>How to use git and github</li>
-              <li>Figma</li>
+              <li>How to use Figma for pixel perfect design</li>
             </ul>
 
             <MobileSkills />
