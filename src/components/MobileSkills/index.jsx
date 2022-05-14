@@ -48,32 +48,62 @@ const MobileSkills = () => {
       infinite={true}
     >
       <div className="item1 carousel-items">
-        I know how to build some things with HTML CSS and JAVASCRIPT.
-        <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
-        <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
-        <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
+        I know how to build things with HTML CSS and JAVASCRIPT.
+        <FontAwesomeIcon
+          icon={faHtml5}
+          className="mobile-icon"
+          color="#f06529"
+        />
+        <FontAwesomeIcon
+          icon={faCss3}
+          className="mobile-icon"
+          color="#2965f1"
+        />
+        <FontAwesomeIcon icon={faJs} className="mobile-icon" color="#f0db4f" />
       </div>
       <div className="item2 carousel-items">
         How to use SCSS as preproccesor and Bootstrap as CSS framework.
-        <FontAwesomeIcon icon={faSass} className="icon" color="#f0db4f" />
-        <FontAwesomeIcon icon={faBootstrap} className="icon" color="#f0db4f" />
+        <FontAwesomeIcon
+          icon={faSass}
+          className="mobile-icon"
+          color="#f0db4f"
+        />
+        <FontAwesomeIcon
+          icon={faBootstrap}
+          className="mobile-icon"
+          color="#f0db4f"
+        />
       </div>
       <div className="item3 carousel-items">
         Principles of responsive web design.
       </div>
       <div className="item4 carousel-items">
         Some knowlegde and experience working with React.
-        <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
+        <FontAwesomeIcon
+          icon={faReact}
+          className="mobile-icon"
+          color="#5ED4F4"
+        />
       </div>
       <div className="item5 carousel-items">
         Basic knowlegde and experience working with Node Js and MongoDB.
-        <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
+        <FontAwesomeIcon
+          icon={faNode}
+          className="mobile-icon"
+          color="#3c873a"
+        />
       </div>
       <div className="item6 carousel-items">
-        How to use git and github
-        <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
+        How to use git and github.
+        <FontAwesomeIcon
+          icon={faGitAlt}
+          className="mobile-icon"
+          color="#f34f29"
+        />
       </div>
-      <div className="item7 carousel-items">Figma</div>
+      <div className="item7 carousel-items">
+        How to use Figma for pixel perfect design.
+      </div>
     </Carousel>
   )
 }

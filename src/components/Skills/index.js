@@ -68,10 +68,10 @@ const Skills = () => {
               <li>Principles of responsive web design.</li>
               <li>Some knowlegde and experience working with React.</li>
               <li>
-                Basic knowlegde and experience working with Node Js and MongoDB
+                Basic knowlegde and experience working with Node Js and MongoDB.
               </li>
-              <li>How to use git and github</li>
-              <li>How to use Figma for pixel perfect design</li>
+              <li>How to use git and github.</li>
+              <li>How to use Figma for pixel perfect design.</li>
             </ul>
 
             <MobileSkills />
