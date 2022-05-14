@@ -10,7 +10,13 @@
   }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1007px) {
+@media only screen and (min-width: 768px) and (max-width: 1223px) {
+  .skills-carousel {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
   .skills-carousel {
     display: none !important;
   }

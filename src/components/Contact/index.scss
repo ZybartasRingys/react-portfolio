@@ -201,7 +201,7 @@
 
 /* Contact mobile  */
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 767px) {
   .contact-page {
     display: flex;
     flex-direction: column;
@@ -277,7 +277,7 @@
 
 /* Contact tablet  */
 
-@media only screen and (min-width: 640px) and (max-width: 1007px) {
+@media only screen and (min-width: 768px) and (max-width: 1223px) {
   .contact-page {
     left: 13%;
 
@@ -334,6 +334,44 @@
         transform: translateY(-50%);
         width: 70%;
         height: 18%;
+      }
+    }
+  }
+}
+
+/* contact Desktop */
+
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
+  .contact-page {
+    .text-zone__contact {
+      left: 18%;
+      width: 65%;
+    }
+
+    .contact-form {
+      width: 50%;
+
+      form {
+        @include tabletForm;
+        input[type='text'],
+        input[type='email'] {
+          height: 40px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .map {
+      .info-map {
+        top: 35px;
+        right: 3%;
+        span {
+          font-size: 14px;
+
+          span {
+            color: #ffd700;
+          }
+        }
       }
     }
   }
