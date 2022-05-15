@@ -9,7 +9,7 @@ const MobileHamburger = () => {
   const [isOpen, setOpen] = useState(false)
   return (
     <>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#1ba098" />
       {isOpen && <MobileSocialLinks />}
     </>
   )

@@ -1,0 +1,24 @@
+/* social links*/
+
+.mobile-social-links {
+  width: 60px;
+  height: 250px;
+  position: absolute;
+  right: 5%;
+  top: 100%;
+
+  ul {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .mobile-icon {
+    color: '#1ba098';
+  }
+}

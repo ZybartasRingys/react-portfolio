@@ -13,11 +13,6 @@
     left: 5%;
   }
 
-  .hamburger-react {
-    position: absolute !important;
-    right: 5%;
-  }
-
   .page-links {
     width: 45%;
     display: flex;
@@ -107,23 +102,6 @@
 .mobile-nav-links {
   height: 20px;
   width: 20px;
-}
-
-/* social links*/
-
-.mobile-social-links {
-  width: 150px;
-  height: 250px;
-  position: absolute;
-  left: 20%;
-  top: 100%;
-  border: 1px solid red;
-  ul {
-    display: flex;
-    li {
-      list-style: none;
-    }
-  }
 }
 
 /* Mobile nav tablet */
