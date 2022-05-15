@@ -8,7 +8,6 @@ const Layout = () => {
     <div className="App">
       <Sidebar />
       <MobileNav />
-
       <div className="page">
         <span className="tags top-tags">&lt;html&gt;</span>
         <span className="tags top-tags">&lt;body&gt;</span>

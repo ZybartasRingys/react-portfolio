@@ -183,7 +183,7 @@
 
 /* Skills mobile  */
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 767px) {
   .skills-page {
     display: flex;
     flex-direction: column;
@@ -240,7 +240,7 @@
 
 /* Skills tablet  */
 
-@media only screen and (min-width: 640px) and (max-width: 1007px) {
+@media only screen and (min-width: 768px) and (max-width: 1223px) {
   .skills-page {
     left: 15%;
   }
@@ -267,7 +267,7 @@
 
 /* Home Desktop */
 
-@media only screen and (min-width: 1008px) and (max-width: 1440px) {
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
   .skills-page {
     .text-zone {
       left: 19%;

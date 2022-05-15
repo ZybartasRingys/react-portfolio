@@ -1,18 +1,21 @@
 import './index.scss'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHome,
   faUser,
   faEnvelope,
-  faCode,
   faGear,
 } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import MobileHamburger from '../MobileHamburger'
 
 const MobileNav = () => {
   return (
     <div className="mobile-nav-bar">
+      <Link className="mobile-logo" to="/">
+        ZR
+      </Link>
+
       <div className="page-links">
         <NavLink activeclassname="active" to="/">
           <FontAwesomeIcon
@@ -53,43 +56,8 @@ const MobileNav = () => {
             className="mobile-nav-links"
           />
         </NavLink>
-      </div>
-      <div className="social-links">
-        <div className="hamburger">
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/%C5%BEybartas-ringys/"
-                className="mobile-icon"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/ZybartasRingys"
-                className="mobile-icon"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
 
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.frontendmentor.io/profile/ZybartasRingys"
-                className="mobile-icon"
-              >
-                <FontAwesomeIcon icon={faCode} />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <MobileHamburger />
       </div>
     </div>
   )

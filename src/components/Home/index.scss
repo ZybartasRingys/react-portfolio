@@ -8,25 +8,18 @@
     transform: translateY(-60%);
     width: 60%;
     max-height: 90%;
-  }
 
-  h1 {
-    @include mainHeading;
-  }
+    h1 {
+      @include mainHeading;
+    }
 
-  p {
-    @include DesktopParagraph;
-  }
+    p {
+      @include DesktopParagraph;
+    }
 
-  h2 {
-    @include DesktopH2;
-  }
-
-  .z {
-    font-size: 63px;
-    color: #ffd700;
-    animation: rotateIn 1s linear both;
-    animation-delay: 1.3s;
+    h2 {
+      @include DesktopH2;
+    }
   }
 
   //Contact btn

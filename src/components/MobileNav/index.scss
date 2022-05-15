@@ -3,12 +3,20 @@
   width: 100%;
   height: 50px;
   position: absolute;
-  top: 0;
   z-index: 3;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .mobile-logo {
+    position: absolute;
+    left: 5%;
+  }
+
+  .hamburger-react {
+    position: absolute !important;
+    right: 5%;
+  }
 
   .page-links {
     width: 45%;
@@ -94,11 +102,6 @@
   }
 }
 
-/* hamburger*/
-.hamburger {
-  display: none;
-}
-
 /* mobile nav links*/
 
 .mobile-nav-links {
@@ -108,7 +111,13 @@
 
 /* social links*/
 
-.social-links {
+.mobile-social-links {
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  left: 20%;
+  top: 100%;
+  border: 1px solid red;
   ul {
     display: flex;
     li {
