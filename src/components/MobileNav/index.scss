@@ -17,82 +17,85 @@
     width: 45%;
     display: flex;
     justify-content: space-between;
-  }
 
-  a {
-    font-size: 22px;
-    color: #4d4d4e;
-    display: block;
-    line-height: 51px;
-    height: 51px;
-    position: relative;
-    text-decoration: none;
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
 
-    i {
-      transition: all 0.3s ease-out;
-    }
-
-    // icon link hover
-
-    &:hover {
-      color: #1ba098;
-
-      svg {
-        opacity: 0;
+      i {
+        transition: all 0.3s ease-out;
       }
+
+      // icon link hover
+
+      &:hover {
+        color: #1ba098;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      // icon link after
 
       &:after {
-        opacity: 1;
+        content: '';
+        font-size: 8px;
+        letter-spacing: 2px;
+        position: absolute;
+        margin-left: -6px;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3 ease-out;
+      }
+      // home link icon
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
       }
     }
 
-    // icon link after
+    // about link icon
 
-    &:after {
-      content: '';
-      font-size: 8px;
-      letter-spacing: 2px;
-      position: absolute;
-      margin-left: -6px;
-      bottom: 0;
-      display: block;
-      width: 100%;
-      text-align: center;
-      opacity: 0;
-      transition: all 0.3 ease-out;
-    }
-    // home link icon
-    &:first-child {
-      &::after {
-        content: 'HOME';
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
       }
     }
-  }
-  // about link icon
 
-  a.about-link {
-    &:after {
-      content: 'ABOUT';
+    // about link icon
+
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
     }
-  }
 
-  a.skills-link {
-    &:after {
-      content: 'SKILLS';
+    // contact link icon
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
     }
-  }
 
-  // contact link icon
-
-  a.contact-link {
-    &:after {
-      content: 'CONTACT';
-    }
-  }
-
-  a.active {
-    svg {
-      color: #1ba098;
+    a.active {
+      svg {
+        color: #1ba098;
+      }
     }
   }
 }

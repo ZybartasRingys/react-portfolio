@@ -56,9 +56,8 @@ const MobileNav = () => {
             className="mobile-nav-links"
           />
         </NavLink>
-
-        <MobileHamburger />
       </div>
+      <MobileHamburger />
     </div>
   )
 }
