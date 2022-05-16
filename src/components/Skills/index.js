@@ -28,6 +28,9 @@ const Skills = () => {
   useEffect(() => {
     myFunction()
   }, [])
+
+  const skillsArray = ['S', 'k', 'i', 'l', 'l', 's', '', '&', '']
+  const experienceArray = ['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']
   return (
     <>
       <div className="container skills-page">
@@ -35,28 +38,17 @@ const Skills = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[
-                'S',
-                'k',
-                'i',
-                'l',
-                'l',
-                's',
-                '&',
-                'E',
-                'x',
-                'p',
-                'e',
-                'r',
-                'i',
-                'e',
-                'n',
-                'c',
-                'e',
-              ]}
+              strArray={skillsArray}
+              idx={36}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={experienceArray}
               idx={36}
             />
           </h1>
+
           <div className="skills-zone">
             <ul className="skills-list">
               <li>I know how to build things with HTML CSS and JAVASCRIPT.</li>
@@ -66,7 +58,7 @@ const Skills = () => {
               <li>Principles of responsive web design.</li>
               <li>Some knowlegde and experience working with React.</li>
               <li>
-                Basic knowlegde and experience working with Node Js and MongoDB.
+                Basic knowlegde and experience working with Node JS and MongoDB.
               </li>
               <li>How to use git and github.</li>
               <li>How to use Figma for pixel perfect design.</li>

@@ -116,7 +116,6 @@
     text-transform: uppercase;
     float: right;
     text-align: center;
-    margin-right: 10px;
     cursor: pointer;
   }
 
@@ -227,6 +226,7 @@
       flex-direction: column-reverse;
 
       form {
+        @include mobileForm;
         input[type='text'],
         input[type='email'] {
           font-size: 12px;
@@ -250,7 +250,6 @@
           font-size: 15px;
           position: absolute;
           margin-top: 10px;
-          right: 100px;
           animation: fadeIn 1s 1.7s backwards;
         }
       }
@@ -265,7 +264,7 @@
 
       .contact-info {
         margin-top: 0 !important;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
       }
     }
 

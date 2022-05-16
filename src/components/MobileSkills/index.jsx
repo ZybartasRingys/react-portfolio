@@ -20,7 +20,6 @@ import 'react-multi-carousel/lib/styles.css'
 const MobileSkills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 2240, min: 1441 },
       items: 5,
     },
@@ -49,60 +48,75 @@ const MobileSkills = () => {
     >
       <div className="item1 carousel-items">
         I know how to build things with HTML CSS and JAVASCRIPT.
-        <FontAwesomeIcon
-          icon={faHtml5}
-          className="mobile-icon"
-          color="#f06529"
-        />
-        <FontAwesomeIcon
-          icon={faCss3}
-          className="mobile-icon"
-          color="#2965f1"
-        />
-        <FontAwesomeIcon icon={faJs} className="mobile-icon" color="#f0db4f" />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faHtml5}
+            className="mobile-icon"
+            color="#f06529"
+          />
+          <FontAwesomeIcon
+            icon={faCss3}
+            className="mobile-icon"
+            color="#2965f1"
+          />
+          <FontAwesomeIcon
+            icon={faJs}
+            className="mobile-icon"
+            color="#f0db4f"
+          />
+        </div>
       </div>
       <div className="item2 carousel-items">
         How to use SCSS as preproccesor and Bootstrap as CSS framework.
-        <FontAwesomeIcon
-          icon={faSass}
-          className="mobile-icon"
-          color="#f0db4f"
-        />
-        <FontAwesomeIcon
-          icon={faBootstrap}
-          className="mobile-icon"
-          color="#f0db4f"
-        />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faSass}
+            className="mobile-icon"
+            color="#f0db4f"
+          />
+          <FontAwesomeIcon
+            icon={faBootstrap}
+            className="mobile-icon"
+            color="#f0db4f"
+          />
+        </div>
       </div>
       <div className="item3 carousel-items">
         Principles of responsive web design.
+        <div className="carousel-icons"></div>
       </div>
       <div className="item4 carousel-items">
         Some knowlegde and experience working with React.
-        <FontAwesomeIcon
-          icon={faReact}
-          className="mobile-icon"
-          color="#5ED4F4"
-        />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faReact}
+            className="mobile-icon"
+            color="#5ED4F4"
+          />
+        </div>
       </div>
       <div className="item5 carousel-items">
         Basic knowlegde and experience working with Node Js and MongoDB.
-        <FontAwesomeIcon
-          icon={faNode}
-          className="mobile-icon"
-          color="#3c873a"
-        />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faNode}
+            className="mobile-icon"
+            color="#3c873a"
+          />
+        </div>
       </div>
       <div className="item6 carousel-items">
         How to use git and github.
-        <FontAwesomeIcon
-          icon={faGitAlt}
-          className="mobile-icon"
-          color="#f34f29"
-        />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faGitAlt}
+            className="mobile-icon"
+            color="#f34f29"
+          />
+        </div>
       </div>
       <div className="item7 carousel-items">
-        How to use Figma for pixel perfect design.
+        How to use Figma to get best out of design.
       </div>
     </Carousel>
   )

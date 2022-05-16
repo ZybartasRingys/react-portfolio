@@ -127,7 +127,7 @@
 // mobile h2 mixin
 
 @mixin mobileh2 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 
   &::before {
@@ -182,6 +182,29 @@
     font-size: 13px;
     margin-top: 22px;
     margin-left: 15px;
+  }
+}
+
+@mixin mobileForm {
+  &::before {
+    content: '<form>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -30px;
+    left: -50px !important;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</form>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 20px;
+    animation: fadeIn 1s 1.7s backwards;
   }
 }
 
@@ -274,7 +297,7 @@
     font-size: 15px;
     position: absolute;
     margin-top: -20px;
-    left: -60px;
+    left: -40px;
     animation: fadeIn 1s 1.7s backwards;
   }
 
