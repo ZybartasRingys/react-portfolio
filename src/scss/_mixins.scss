@@ -38,12 +38,11 @@
 
 @mixin DesktopH2 {
   font-family: 'Coolvetica';
-  margin-top: 160px;
   color: #fff;
-  margin-top: 50px;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
+  letter-spacing: 3px;
   animation: fadeIn 1s 1.8s backwards;
 
   &::before {
@@ -112,61 +111,59 @@
 
   &::before {
     content: '<h1>';
-    font-size: 13px;
+    font-size: 13px !important;
     margin-top: -10px;
     left: -49px;
   }
 
   &::after {
     content: '</h1>';
-    font-size: 13px;
-    margin-top: 20px;
-    margin-left: 5px;
+    font-size: 13px !important;
+    margin-top: 30px;
+    margin-left: 10px;
   }
 }
 
 // mobile h2 mixin
 
 @mixin mobileh2 {
-  font-size: 13px;
+  font-size: 18px;
   line-height: 26px;
 
   &::before {
     content: '<h2>';
     font-size: 13px;
-    margin-top: -20px;
-    left: -40px;
+    margin-top: -10px;
+    left: -45px;
   }
 
   &::after {
     content: '</h2>';
     font-size: 13px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
 
 //mobile paragraph mixin
 
 @mixin mobileParagraph {
-  color: #fff;
-  font-size: 13px;
+  font-size: 13px !important;
   opacity: 0.8;
   letter-spacing: 2px;
 
   &::before {
     content: '<p>';
     font-size: 13px !important;
-    position: absolute;
     margin-top: -10px !important;
-    left: -35px;
+    left: -35px !important;
   }
 
   &::after {
     content: '</p>';
     font-size: 13px !important;
     margin-top: 10px !important;
-    margin-left: 10px;
+    margin-left: 10px !important;
   }
 }
 

@@ -42,9 +42,7 @@ const Skills = () => {
                 'l',
                 'l',
                 's',
-                '',
                 '&',
-                '',
                 'E',
                 'x',
                 'p',
@@ -56,7 +54,7 @@ const Skills = () => {
                 'c',
                 'e',
               ]}
-              idx={30}
+              idx={36}
             />
           </h1>
           <div className="skills-zone">
