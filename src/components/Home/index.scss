@@ -108,19 +108,22 @@
   .home-page {
     .text-zone {
       left: 19%;
-      width: 65%;
+      width: 70%;
+      top: 55%;
 
       h1 {
         @include mainHeading;
+        margin-bottom: 100px;
       }
 
       h2 {
         @include DesktopH2;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
       }
 
       p {
         @include DesktopParagraph;
+        margin-bottom: 100px;
       }
     }
   }

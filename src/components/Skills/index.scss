@@ -242,13 +242,14 @@
   }
 }
 
-/* Home Desktop */
+/* Skills Desktop */
 
 @media only screen and (min-width: 1224px) and (max-width: 1440px) {
   .skills-page {
     .text-zone {
       left: 19%;
       width: 67%;
+      top: 46%;
 
       h1 {
         @include mainHeading;
@@ -261,6 +262,12 @@
 
       p {
         @include DesktopParagraph;
+      }
+
+      .skills-links {
+        p {
+          @include DesktopParagraph;
+        }
       }
 
       .icons {
