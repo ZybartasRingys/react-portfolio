@@ -222,8 +222,18 @@
       @include mainHeadingTablet;
     }
 
-    li {
-      @include tabletLi;
+    .skills-list {
+      @include tabletuL;
+      li {
+        @include tabletLi;
+      }
+    }
+
+    .skills-links {
+      p {
+        @include tabletParagraph;
+        font-size: 18px !important;
+      }
     }
 
     .icons {

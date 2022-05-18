@@ -34,6 +34,7 @@
       position: absolute;
       margin-top: -30px;
       left: -60px;
+      opacity: 0.9;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -45,6 +46,7 @@
       position: absolute;
       margin-top: 20px;
       right: 180px;
+      opacity: 0.9;
       animation: fadeIn 1s 1.7s backwards;
     }
   }
@@ -121,8 +123,8 @@
 
   p {
     font-size: 15px;
-    opacity: 0.8;
     color: #fff;
+    opacity: 0.9;
     font-family: sans-serif;
     font-weight: 300;
   }
@@ -147,7 +149,7 @@
       font-size: 18px;
       position: absolute;
       margin-top: 20px;
-      right: 180px;
+      right: 26%;
       animation: fadeIn 1s 1.7s backwards;
     }
   }
@@ -231,27 +233,6 @@
         input[type='email'] {
           font-size: 12px;
         }
-
-        &::before {
-          content: '<form>';
-          font-family: 'La Belle Aurore';
-          color: #ffd700;
-          font-size: 15px;
-          position: absolute;
-          margin-top: -20px;
-          left: -60px;
-          animation: fadeIn 1s 1.7s backwards;
-        }
-
-        &::after {
-          content: '</form>';
-          font-family: 'La Belle Aurore';
-          color: #ffd700;
-          font-size: 15px;
-          position: absolute;
-          margin-top: 10px;
-          animation: fadeIn 1s 1.7s backwards;
-        }
       }
       ul {
         input {
@@ -265,6 +246,7 @@
       .contact-info {
         margin-top: 0 !important;
         margin-bottom: 30px;
+        @include contact-info;
       }
     }
 
@@ -281,7 +263,11 @@
     left: 13%;
 
     .text-zone__contact {
-      width: 70%;
+      width: 63%;
+
+      h1 {
+        @include mainHeadingTablet;
+      }
     }
 
     .contact-form {
@@ -298,21 +284,25 @@
         @include tabletForm;
         input[type='text'],
         input[type='email'] {
-          height: 40px;
+          height: 30px;
           font-size: 16px;
         }
         textarea {
-          height: 120px;
+          height: 90px;
+        }
+      }
+
+      .contact-info {
+        p {
+          @include tabletParagraph;
         }
       }
     }
 
     .map {
-      height: 100%;
-
       .info-map {
-        top: 78%;
-        right: 18%;
+        top: 76%;
+        right: 25%;
         width: 173px;
         font-size: 15px;
         padding: 5px !important;
@@ -331,8 +321,9 @@
         top: 87%;
         left: 13%;
         transform: translateY(-50%);
-        width: 70%;
+        width: 63%;
         height: 18%;
+        @include tabletMap;
       }
     }
   }

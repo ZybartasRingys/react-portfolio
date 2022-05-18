@@ -94,6 +94,10 @@
         @include tableth2;
         margin-bottom: 30px;
       }
+
+      p {
+        @include tabletParagraph;
+      }
     }
   }
 }
