@@ -25,30 +25,9 @@
   width: 70%;
   margin-top: 20px;
 
-  form {
-    &::before {
-      content: '<form>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -30px;
-      left: -60px;
-      opacity: 0.9;
-      animation: fadeIn 1s 1.7s backwards;
-    }
-
-    &::after {
-      content: '</form>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 20px;
-      right: 180px;
-      opacity: 0.9;
-      animation: fadeIn 1s 1.7s backwards;
-    }
+  p {
+    font-size: 14px;
+    color: #fff;
   }
 
   ul {
@@ -120,39 +99,6 @@
     text-align: center;
     cursor: pointer;
   }
-
-  p {
-    font-size: 15px;
-    color: #fff;
-    opacity: 0.9;
-    font-family: sans-serif;
-    font-weight: 300;
-  }
-
-  .contact-info {
-    margin-top: 60px;
-    &::before {
-      content: '<p>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -30px;
-      left: -60px;
-      animation: fadeIn 1s 1.7s backwards;
-    }
-
-    &::after {
-      content: '</p>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 20px;
-      right: 26%;
-      animation: fadeIn 1s 1.7s backwards;
-    }
-  }
 }
 
 .map-wrap {
@@ -219,7 +165,6 @@
 
       p {
         @include mobileParagraph;
-        font-size: 11px;
       }
     }
 
@@ -228,25 +173,19 @@
       flex-direction: column-reverse;
 
       form {
-        @include mobileForm;
         input[type='text'],
         input[type='email'] {
           font-size: 12px;
         }
       }
       ul {
+        margin-top: 20px;
         input {
           height: 25px !important;
         }
         textarea {
           height: 70px !important;
         }
-      }
-
-      .contact-info {
-        margin-top: 0 !important;
-        margin-bottom: 30px;
-        @include contact-info;
       }
     }
 
@@ -268,6 +207,10 @@
       h1 {
         @include mainHeadingTablet;
       }
+
+      p {
+        @include tabletParagraph;
+      }
     }
 
     .contact-form {
@@ -275,13 +218,7 @@
       display: flex;
       flex-direction: column;
 
-      p {
-        @include tabletParagraph;
-        font-size: 18px !important;
-      }
-
       form {
-        @include tabletForm;
         input[type='text'],
         input[type='email'] {
           height: 30px;
@@ -289,12 +226,6 @@
         }
         textarea {
           height: 90px;
-        }
-      }
-
-      .contact-info {
-        p {
-          @include tabletParagraph;
         }
       }
     }
@@ -323,7 +254,6 @@
         transform: translateY(-50%);
         width: 63%;
         height: 18%;
-        @include tabletMap;
       }
     }
   }
@@ -334,26 +264,32 @@
 @media only screen and (min-width: 1224px) and (max-width: 1440px) {
   .contact-page {
     .text-zone__contact {
-      left: 18%;
+      left: 17%;
       width: 65%;
+      top: 50%;
+
+      h1 {
+        @include mainHeading;
+      }
+
+      p {
+        @include DesktopParagraph;
+      }
     }
 
     .contact-form {
       width: 50%;
-
-      form {
-        @include tabletForm;
-        input[type='text'],
-        input[type='email'] {
-          height: 40px;
-          font-size: 16px;
-        }
-      }
     }
 
     .map {
+      .map-wrap {
+        right: 2%;
+        width: 45% !important;
+        height: 80%;
+      }
+
       .info-map {
-        top: 35px;
+        top: 105px;
         right: 3%;
         span {
           font-size: 14px;
@@ -364,5 +300,67 @@
         }
       }
     }
+  }
+
+  .leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+/* contact Large Desktop */
+
+@media only screen and (min-width: 1441px) and (max-width: 2500px) {
+  .contact-page {
+    .text-zone__contact {
+      left: 15%;
+      width: 65%;
+      top: 50%;
+
+      h1 {
+        @include mainHeading;
+      }
+
+      p {
+        @include DesktopParagraph;
+      }
+    }
+
+    .contact-form {
+      width: 50%;
+    }
+
+    .map {
+      .map-wrap {
+        right: 2%;
+        width: 45% !important;
+        height: 80%;
+      }
+
+      .info-map {
+        top: 100px;
+        right: 3%;
+        span {
+          font-size: 14px;
+
+          span {
+            color: #ffd700;
+          }
+        }
+      }
+    }
+  }
+
+  .leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
   }
 }

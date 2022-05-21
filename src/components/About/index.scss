@@ -1,4 +1,5 @@
 @import '/src/scss/mixins';
+@import '/src/scss/buttons';
 .about-page,
 .contact-page {
   .text-zone {
@@ -39,6 +40,12 @@
           @include DesktopParagraph;
         }
       }
+
+      // btn to my skills
+
+      .flat-button {
+        @include mySkills;
+      }
     }
   }
 }
@@ -48,21 +55,33 @@
 @media only screen and (max-width: 767px) {
   .about-page {
     .text-zone {
-      top: 58%;
+      top: 50%;
       left: 23%;
-      width: 68%;
+      width: 70%;
 
       h1 {
-        margin-bottom: 40px !important;
+        margin-bottom: 30px !important;
         @include mainHeadingMobile;
+      }
+
+      h2 {
+        @include mobileh2;
+        font-size: 12px;
+      }
+
+      p {
+        @include mobileParagraph;
+        font-size: 11px !important;
+        margin-bottom: 10px !important;
       }
     }
 
     .about-text {
       margin-top: 0 !important;
-      p {
-        @include mobileParagraph;
-        font-size: 11px !important;
+
+      .flat-button {
+        left: 0;
+        width: 132px;
       }
     }
   }
@@ -83,10 +102,19 @@
           @include mainHeadingTablet;
         }
 
+        h2 {
+          @include tableth2;
+        }
+
         p {
           @include tabletParagraph;
           margin-top: 30px !important;
         }
+      }
+
+      .flat-button {
+        left: 15%;
+        width: 132px;
       }
     }
   }
@@ -103,10 +131,38 @@
       h1 {
         @include mainHeading;
       }
+    }
+
+    .about-text {
+      h2 {
+        @include DesktopH2;
+        margin-bottom: 60px;
+      }
+
+      p {
+        @include DesktopParagraph;
+      }
+    }
+  }
+}
+
+/* Home Large Desktop */
+
+@media only screen and (min-width: 1441px) and (max-width: 2500px) {
+  .about-page {
+    .text-zone {
+      left: 15%;
+      width: 70%;
+      top: 50%;
+
+      h1 {
+        @include mainHeading;
+        margin-bottom: 100px;
+      }
 
       h2 {
         @include DesktopH2;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
       }
 
       p {

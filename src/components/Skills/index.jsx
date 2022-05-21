@@ -2,19 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileSkills from '../MobileSkills'
-
-import {
-  faReact,
-  faNode,
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJs,
-  faBootstrap,
-  faSass,
-} from '@fortawesome/free-brands-svg-icons'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -88,21 +76,6 @@ const Skills = () => {
                 </a>
               </p>
             </div>
-          </div>
-
-          <div className="icons">
-            <FontAwesomeIcon icon={faHtml5} className="icon" color="#f06529" />
-            <FontAwesomeIcon icon={faCss3} className="icon" color="#2965f1" />
-            <FontAwesomeIcon icon={faJs} className="icon" color="#f0db4f" />
-            <FontAwesomeIcon
-              icon={faBootstrap}
-              className="icon"
-              color="#f0db4f"
-            />
-            <FontAwesomeIcon icon={faSass} className="icon" color="#f0db4f" />
-            <FontAwesomeIcon icon={faReact} className="icon" color="#5ED4F4" />
-            <FontAwesomeIcon icon={faNode} className="icon" color="#3c873a" />
-            <FontAwesomeIcon icon={faGitAlt} className="icon" color="#f34f29" />
           </div>
         </div>
       </div>

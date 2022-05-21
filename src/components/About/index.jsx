@@ -1,6 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -30,19 +31,25 @@ const About = () => {
           </h1>
 
           <div className="about-text">
-            <p>
+            <h2>
               I'm very ambitious front-end developer looking for a role in
               established IT company with the opportunity to work with the
               latest technologies on challenging and diverse projects.
-            </p>
+            </h2>
+
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              sequi dolores autem sunt deleniti odit!
+              sequi dolores autem sunt deleniti odit! Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Explicabo illo aperiam alias,
+              aliquam ad natus vel.
             </p>
+
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo illo aperiam alias, aliquam ad natus vel.
+              You can find more information about my powers @ my skills page
             </p>
+            <Link to="/skills" className="flat-button">
+              TO MY SKILLS
+            </Link>
           </div>
         </div>
       </div>

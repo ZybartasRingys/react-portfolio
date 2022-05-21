@@ -1,116 +1,18 @@
-/* Dekstop MIXINS*/
-
-// Desktop h1 mixin
-
-@mixin mainHeading {
-  margin-bottom: 60px;
-  color: white;
-  font-size: 53px;
-  font-family: 'Coolvetica';
-  letter-spacing: 6px;
-
-  &::before {
-    content: '<h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: -30px;
-    left: -50px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 20px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-
-// Desktop h2 mixin
-
-@mixin DesktopH2 {
-  font-family: 'Coolvetica';
-  color: #fff;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 3px;
-  animation: fadeIn 1s 1.8s backwards;
-
-  &::before {
-    content: '<h2>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: -20px;
-    left: -55px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</h2>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 20px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-
-// Desktop paragraph mixin
-
-@mixin DesktopParagraph {
-  color: #fff;
-  font-size: 24px;
-  opacity: 0.8;
-  letter-spacing: 2px;
-  margin-top: 50px;
-
-  &::before {
-    content: '<p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: -30px;
-    left: -45px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-
 /* MOBILE MIXINS*/
 
 // mobile h1 mixin
 
 @mixin mainHeadingMobile {
   font-size: 24px !important;
-
+  color: white;
+  font-size: 60px;
+  font-family: 'Coolvetica';
+  letter-spacing: 6px;
   &::before {
     content: '<h1>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px !important;
     margin-top: -10px;
     left: -49px;
@@ -118,6 +20,9 @@
 
   &::after {
     content: '</h1>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px !important;
     margin-top: 30px;
     margin-left: 10px;
@@ -127,11 +32,16 @@
 // mobile h2 mixin
 
 @mixin mobileh2 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  opacity: 0.8;
 
   &::before {
     content: '<h2>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px;
     margin-top: -10px;
     left: -45px;
@@ -139,6 +49,9 @@
 
   &::after {
     content: '</h2>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px;
     margin-top: 10px;
     margin-left: 10px;
@@ -149,11 +62,16 @@
 
 @mixin mobileParagraph {
   font-size: 13px !important;
+  line-height: 18px;
   opacity: 0.8;
   letter-spacing: 2px;
+  color: white;
 
   &::before {
     content: '<p>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px !important;
     margin-top: -10px !important;
     left: -35px !important;
@@ -161,6 +79,9 @@
 
   &::after {
     content: '</p>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 13px !important;
     margin-top: 10px !important;
     margin-left: 10px !important;
@@ -185,65 +106,22 @@
   }
 }
 
-//mobile form mixin
-
-@mixin mobileForm {
-  &::before {
-    content: '<form>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 15px;
-    position: absolute;
-    margin-top: -20px;
-    left: -50px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</form>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 15px;
-    position: absolute;
-    margin-top: 10px;
-    right: 30%;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-// contact info mobile mixin
-@mixin contact-info {
-  &::before {
-    content: '<p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 18px;
-    position: absolute;
-    margin-top: -30px;
-    left: -60px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</p>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 20px;
-    right: 26%;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-
 /* MOBILE MIXINS END*/
 
 /* Tablet  MIXINS*/
 
 @mixin mainHeadingTablet {
   font-size: 42px !important;
+  color: white;
+  font-size: 60px;
+  font-family: 'Coolvetica';
+  letter-spacing: 6px;
 
   &::before {
     content: '<h1>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px;
     margin-top: -20px;
     left: -60px;
@@ -251,6 +129,9 @@
 
   &::after {
     content: '</h1>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px;
     margin-top: 50px;
     margin-left: 5px !important;
@@ -260,10 +141,13 @@
 // tablet h2 mixin
 
 @mixin tableth2 {
-  font-size: 32px !important;
-  line-height: 36px;
+  font-size: 22px !important;
+  color: white;
   &::before {
     content: '<h2>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px;
     margin-top: -20px;
     left: -60px;
@@ -271,6 +155,9 @@
 
   &::after {
     content: '</h2>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px;
     margin-top: 30px;
     margin-left: 10px;
@@ -280,9 +167,16 @@
 //tablet paragraph mixin
 
 @mixin tabletParagraph {
-  font-size: 20px !important;
+  font-size: 15px !important;
+  letter-spacing: 2px;
+  color: white;
+  opacity: 0.8;
+
   &::before {
     content: '<p>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px !important;
     position: absolute;
     margin-top: -10px !important;
@@ -291,6 +185,9 @@
 
   &::after {
     content: '</p>';
+    color: #ffd700;
+    font-family: 'La Belle Aurore';
+    position: absolute;
     font-size: 20px !important;
     margin-top: 10px !important;
     margin-left: 10px;
@@ -335,42 +232,94 @@
   }
 }
 
-//tablet form mixin
+/* Dekstop MIXINS*/
 
-@mixin tabletForm {
+// Desktop h1 mixin
+
+@mixin mainHeading {
+  margin-bottom: 60px;
+  color: white;
+  font-size: 60px;
+  font-family: 'Coolvetica';
+  letter-spacing: 6px;
+
   &::before {
-    content: '<form>';
+    content: '<h1>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 20px;
+    font-size: 23px;
     position: absolute;
     margin-top: -20px;
-    left: -65px;
+    left: -50px;
+    opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 
   &::after {
-    content: '</form>';
+    content: '</h1>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 20px;
+    font-size: 23px;
     position: absolute;
-    margin-top: -10px;
-    right: -70px !important;
+    margin-top: 60px;
+    margin-left: 20px;
+    opacity: 0.8;
     animation: fadeIn 1s 1.7s backwards;
   }
 }
 
-// contact-info tablet mixin
-@mixin contactInfoTablet {
+// Desktop h2 mixin
+
+@mixin DesktopH2 {
+  font-family: 'Coolvetica';
+  color: #fff;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  animation: fadeIn 1s 1.8s backwards;
+
+  &::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 23px;
+    position: absolute;
+    margin-top: -20px;
+    left: -55px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  &::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 23px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+}
+
+// Desktop paragraph mixin
+
+@mixin DesktopParagraph {
+  color: #fff;
+  font-size: 19px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  margin-top: 30px;
+
   &::before {
     content: '<p>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 18px;
+    font-size: 23px;
     position: absolute;
-    margin-top: -30px;
-    left: -40px;
+    margin-top: -20px;
+    left: -45px;
     animation: fadeIn 1s 1.7s backwards;
   }
 
@@ -378,36 +327,10 @@
     content: '</p>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
-    font-size: 18px;
+    font-size: 23px;
     position: absolute;
     margin-top: 20px;
-    right: 260px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-}
-
-// tablet map mixin
-
-@mixin tabletMap {
-  &::before {
-    content: '<map>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 18px;
-    position: absolute;
-    margin-top: -30px;
-    left: -55px;
-    animation: fadeIn 1s 1.7s backwards;
-  }
-
-  &::after {
-    content: '</map>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 20px;
-    right: -60px;
+    margin-left: 10px;
     animation: fadeIn 1s 1.7s backwards;
   }
 }

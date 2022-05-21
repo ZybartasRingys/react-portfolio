@@ -7,29 +7,29 @@
   font-size: 16px;
   color: white;
 
-  &::before {
-    content: '<>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: -30px;
-    left: -50px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
+  // &::before {
+  //   content: '<li>';
+  //   font-family: 'La Belle Aurore';
+  //   color: #ffd700;
+  //   font-size: 20px;
+  //   position: absolute;
+  //   margin-top: -30px;
+  //   left: -50px;
+  //   opacity: 0.8;
+  //   animation: fadeIn 1s 1.7s backwards;
+  // }
 
-  &::after {
-    content: '</h1>';
-    font-family: 'La Belle Aurore';
-    color: #ffd700;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 20px;
-    opacity: 0.8;
-    animation: fadeIn 1s 1.7s backwards;
-  }
+  // &::after {
+  //   content: '</li>';
+  //   font-family: 'La Belle Aurore';
+  //   color: #ffd700;
+  //   font-size: 20px;
+  //   position: absolute;
+  //   margin-top: 60px;
+  //   margin-left: 20px;
+  //   opacity: 0.8;
+  //   animation: fadeIn 1s 1.7s backwards;
+  // }
 
   .mobile-icon {
     width: 22px;
@@ -44,6 +44,12 @@
 }
 
 @media only screen and (min-width: 1224px) and (max-width: 1440px) {
+  .skills-carousel {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2500px) {
   .skills-carousel {
     display: none !important;
   }

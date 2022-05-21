@@ -90,10 +90,10 @@ const Contact = () => {
               </ul>
             </form>
 
-            <p className="contact-info">
-              I am interested in any opportunities - especially Frontend
-              realated positions. However, if you have other question, don't
-              hesitate to contact me using form below.
+            <p>
+              I'm interested in any opportunities - especially Frontend realated
+              positions. However, if you have other question, don't hesitate to
+              contact me using form below.
             </p>
           </div>
         </div>

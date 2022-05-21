@@ -72,8 +72,8 @@ const Home = () => {
             project!
           </p>
         </div>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
+        <Link to="/about" className="flat-button">
+          MORE ABOUT ME
         </Link>
       </div>
 

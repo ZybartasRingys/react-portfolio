@@ -13,21 +13,6 @@
     width: 50%;
     vertical-align: middle;
     display: table-cell;
-
-    h1 {
-      @include mainHeading;
-    }
-
-    p {
-      @include DesktopParagraph;
-      font-family: sans-serif;
-      font-weight: 300;
-      max-width: fit-content;
-    }
-  }
-
-  h2 {
-    @include DesktopH2;
   }
 
   .skills-list {
@@ -94,32 +79,6 @@
 
   .skills-links {
     margin-top: 120px;
-    p {
-      font-size: 17px;
-      &::before {
-        content: '<p>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 20px;
-        position: absolute;
-        margin-top: -30px;
-        left: -60px;
-        opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
-
-      &::after {
-        content: '</p>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 20px;
-        position: absolute;
-        margin-top: 60px;
-        margin-left: 20px;
-        opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
-    }
   }
 
   .icons {
@@ -162,7 +121,7 @@
 
       h1 {
         @include mainHeadingMobile;
-        font-size: 18px !important;
+        margin-bottom: 50px;
       }
 
       p {
@@ -214,12 +173,16 @@
 
   .text-zone {
     width: 65% !important;
-    top: 45% !important;
+    top: 46% !important;
     display: flex;
     flex-direction: column;
 
     h1 {
       @include mainHeadingTablet;
+    }
+
+    p {
+      @include tabletParagraph;
     }
 
     .skills-list {
@@ -267,6 +230,43 @@
       .skills-links {
         p {
           @include DesktopParagraph;
+          font-size: 18px;
+        }
+      }
+
+      .icons {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Skills Large Desktop */
+
+@media only screen and (min-width: 1441px) and (max-width: 2500px) {
+  .skills-page {
+    .text-zone {
+      left: 15%;
+      width: 67%;
+      top: 46%;
+
+      h1 {
+        @include mainHeading;
+      }
+
+      h2 {
+        @include DesktopH2;
+        margin-bottom: 30px;
+      }
+
+      p {
+        @include DesktopParagraph;
+      }
+
+      .skills-links {
+        p {
+          @include DesktopParagraph;
+          font-size: 18px;
         }
       }
 
