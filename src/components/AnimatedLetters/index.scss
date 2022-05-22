@@ -20,7 +20,7 @@
 
 // scss function to itare through letters and show them with 10s delay
 
-@for $i from 28 through 60 {
+@for $i from 1 through 60 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 10}s;
   }

@@ -26,7 +26,7 @@ const About = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={aboutArr}
-              idx={15}
+              idx={30}
             />
           </h1>
 

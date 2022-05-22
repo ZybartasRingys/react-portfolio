@@ -18,6 +18,7 @@ const Home = () => {
   useEffect(() => {
     myFunction()
   }, [])
+
   const greetingArray = [
     'H',
     'e',
