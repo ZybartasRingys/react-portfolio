@@ -16,88 +16,15 @@
   }
 
   .skills-list {
-    margin-top: 80px;
-    font-size: 17px;
-    line-height: 18px;
-    opacity: 0.8;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 300;
-
-    &::before {
-      content: '<ul>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 20px;
-      position: absolute;
-      margin-top: -60px;
-      left: -40px;
-      animation: fadeIn 1s 1.7s backwards;
-    }
-
-    &::after {
-      content: '</ul>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 20px;
-      position: absolute;
-      left: -40px;
-      margin-top: 10px;
-      animation: fadeIn 1s 1.7s backwards;
-    }
-
     li {
       list-style: none;
       margin-bottom: 30px;
       margin-left: 15px;
-
-      &::before {
-        content: '<li>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 20px;
-        position: absolute;
-        margin-top: -20px;
-        left: 5px;
-        // opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
-
-      &::after {
-        content: '</li>';
-        font-family: 'La Belle Aurore';
-        color: #ffd700;
-        font-size: 20px;
-        position: absolute;
-        margin-top: 22px;
-        margin-left: 15px;
-        // opacity: 0.8;
-        animation: fadeIn 1s 1.7s backwards;
-      }
     }
   }
 
   .skills-links {
     margin-top: 120px;
-  }
-
-  .icons {
-    position: absolute;
-    right: 3%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-    max-height: 90%;
-
-    .icon {
-      height: 50px;
-      width: 50px;
-      margin-right: 20px;
-    }
   }
 }
 
