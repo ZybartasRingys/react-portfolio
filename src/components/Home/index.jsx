@@ -56,13 +56,13 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={greetingArray}
-              idx={28}
+              idx={25}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={28}
+              idx={25}
             />
           </h1>
 

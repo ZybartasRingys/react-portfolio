@@ -26,22 +26,21 @@ const About = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={aboutArr}
-              idx={30}
+              idx={25}
             />
           </h1>
 
           <div className="about-text">
             <h2>
-              I'm very ambitious front-end developer looking for a role in
-              established IT company with the opportunity to work with the
-              latest technologies on challenging and diverse projects.
+              I'm very curious developer looking for a role in established IT
+              company with the opportunity to work with the latest technologies
+              on challenging and diverse projects.
             </h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              sequi dolores autem sunt deleniti odit! Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Explicabo illo aperiam alias,
-              aliquam ad natus vel.
+              In love with family time, friends, sports, football, bike, tennis,
+              wakeboarding, summer, walking, music, series, learning,
+              travelling.
             </p>
 
             <p>

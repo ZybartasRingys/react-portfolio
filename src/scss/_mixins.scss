@@ -33,7 +33,7 @@
 
 @mixin mobileh2 {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: white;
   opacity: 0.8;
 
@@ -62,7 +62,7 @@
 
 @mixin mobileParagraph {
   font-size: 13px !important;
-  line-height: 18px;
+  line-height: 15px;
   opacity: 0.8;
   letter-spacing: 2px;
   color: white;
@@ -114,6 +114,7 @@
   font-size: 42px !important;
   color: white;
   font-size: 60px;
+  opacity: 0.8;
   font-family: 'Coolvetica';
   letter-spacing: 6px;
 
@@ -123,7 +124,7 @@
     font-family: 'La Belle Aurore';
     position: absolute;
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: -10px;
     left: -60px;
   }
 
@@ -142,6 +143,7 @@
 
 @mixin tableth2 {
   font-size: 22px !important;
+  opacity: 0.8;
   color: white;
   &::before {
     content: '<h2>';
@@ -150,7 +152,7 @@
     position: absolute;
     font-size: 20px;
     margin-top: -20px;
-    left: -60px;
+    left: -50px;
   }
 
   &::after {
@@ -180,7 +182,7 @@
     font-size: 20px !important;
     position: absolute;
     margin-top: -10px !important;
-    left: -40px;
+    left: -45px;
   }
 
   &::after {
@@ -275,7 +277,7 @@
   color: #fff;
   font-weight: 300;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 30px;
   letter-spacing: 2px;
   opacity: 0.9;
   animation: fadeIn 1s 1.8s backwards;

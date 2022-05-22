@@ -27,13 +27,13 @@ const Skills = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={skillsArray}
-              idx={36}
+              idx={25}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={experienceArray}
-              idx={36}
+              idx={25}
             />
           </h1>
 

@@ -9,18 +9,6 @@
     transform: translateY(-60%);
     width: 60%;
     max-height: 90%;
-
-    h1 {
-      @include mainHeading;
-    }
-
-    p {
-      @include DesktopParagraph;
-    }
-
-    h2 {
-      @include DesktopH2;
-    }
   }
 
   //Contact btn
@@ -35,16 +23,18 @@
 @media only screen and (max-width: 767px) {
   .home-page {
     .text-zone {
-      top: 55%;
-      width: 60%;
+      top: 50%;
+      width: 61%;
       left: 23%;
 
       h1 {
         @include mainHeadingMobile;
+        margin-bottom: 50px;
       }
 
       h2 {
         @include mobileh2;
+        margin-bottom: 50px;
       }
 
       p {
@@ -57,7 +47,7 @@
     .flat-button {
       left: 23% !important;
       width: 160px !important;
-      bottom: 60px;
+      bottom: 80px;
     }
   }
 }
