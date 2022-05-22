@@ -16,6 +16,8 @@
   }
 
   .skills-list {
+    opacity: 0.8;
+    color: #fff;
     li {
       list-style: none;
       margin-bottom: 30px;
@@ -53,6 +55,7 @@
 
       p {
         @include mobileParagraph;
+        line-height: 22px;
       }
 
       .skills-list {
@@ -161,6 +164,12 @@
         }
       }
 
+      .skills-list {
+        li {
+          @include desktopLi;
+        }
+      }
+
       .icons {
         display: none;
       }
@@ -194,6 +203,12 @@
         p {
           @include DesktopParagraph;
           font-size: 18px;
+        }
+      }
+
+      .skills-list {
+        li {
+          @include desktopLi;
         }
       }
 

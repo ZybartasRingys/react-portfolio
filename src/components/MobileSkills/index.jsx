@@ -12,6 +12,8 @@ import {
   faJs,
   faBootstrap,
   faSass,
+  faGithub,
+  faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 
 import Carousel from 'react-multi-carousel'
@@ -41,7 +43,7 @@ const MobileSkills = () => {
     <Carousel
       className="skills-carousel"
       responsive={responsive}
-      autoPlaySpeed={5000}
+      autoPlaySpeed={5500}
       removeArrowOnDeviceType={['tablet', 'mobile']}
       autoPlay={true}
       infinite={true}
@@ -72,12 +74,12 @@ const MobileSkills = () => {
           <FontAwesomeIcon
             icon={faSass}
             className="mobile-icon"
-            color="#f0db4f"
+            color="#f8a5c2"
           />
           <FontAwesomeIcon
             icon={faBootstrap}
             className="mobile-icon"
-            color="#f0db4f"
+            color="#553C7B"
           />
         </div>
       </div>
@@ -113,10 +115,20 @@ const MobileSkills = () => {
             className="mobile-icon"
             color="#f34f29"
           />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="mobile-icon"
+            color="#f34f29"
+          />
         </div>
       </div>
       <div className="item7 carousel-items">
         How to use Figma to get best out of design.
+        <FontAwesomeIcon
+          icon={faFigma}
+          className="mobile-icon"
+          color="#f34f29"
+        />
       </div>
     </Carousel>
   )
