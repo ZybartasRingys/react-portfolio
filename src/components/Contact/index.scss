@@ -28,6 +28,8 @@
   p {
     font-size: 14px;
     color: #fff;
+    animation: fadeInUp 2s;
+    animation-fill-mode: forwards;
   }
 
   ul {
@@ -327,6 +329,7 @@
 
       p {
         @include DesktopParagraph;
+        font-size: 18px;
       }
     }
 
