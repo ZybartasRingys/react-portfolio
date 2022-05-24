@@ -12,7 +12,7 @@ const Home = () => {
   const myFunction = async () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 5500)
+    }, 4000)
   }
 
   useEffect(() => {

@@ -10,7 +10,7 @@ const Skills = () => {
   const myFunction = async () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 5000)
+    }, 4000)
   }
 
   useEffect(() => {
@@ -27,13 +27,13 @@ const Skills = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={skillsArray}
-              idx={25}
+              idx={20}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={experienceArray}
-              idx={25}
+              idx={20}
             />
           </h1>
 
