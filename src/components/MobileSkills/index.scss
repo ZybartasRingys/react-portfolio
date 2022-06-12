@@ -4,36 +4,14 @@
 }
 
 .carousel-items {
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  // font-family: 'Helvetica Neue';
   color: white;
 
-  // &::before {
-  //   content: '<li>';
-  //   font-family: 'La Belle Aurore';
-  //   color: #ffd700;
-  //   font-size: 20px;
-  //   position: absolute;
-  //   margin-top: -30px;
-  //   left: -50px;
-  //   opacity: 0.8;
-  //   animation: fadeIn 1s 1.7s backwards;
-  // }
-
-  // &::after {
-  //   content: '</li>';
-  //   font-family: 'La Belle Aurore';
-  //   color: #ffd700;
-  //   font-size: 20px;
-  //   position: absolute;
-  //   margin-top: 60px;
-  //   margin-left: 20px;
-  //   opacity: 0.8;
-  //   animation: fadeIn 1s 1.7s backwards;
-  // }
-
   .mobile-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
 

@@ -44,7 +44,8 @@ const About = () => {
             </p>
 
             <p>
-              You can find more information about my powers @ my skills page
+              You can find more information about my tech knowledge @ my skills
+              page
             </p>
             <Link to="/skills" className="flat-button">
               TO MY SKILLS

@@ -8,6 +8,18 @@
   top: 0;
   z-index: 3;
   min-height: 500px;
+  text-align: center;
+
+  .logo {
+    color: #1ba098;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Coolvetica';
+    font-size: 11px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+  }
 
   // sidebar nav
 
