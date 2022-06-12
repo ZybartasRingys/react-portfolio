@@ -16,6 +16,8 @@ import {
   faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 
+import { faDisplay } from '@fortawesome/free-solid-svg-icons'
+
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
@@ -85,7 +87,13 @@ const MobileSkills = () => {
       </div>
       <div className="item3 carousel-items">
         Principles of responsive web design.
-        <div className="carousel-icons"></div>
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faDisplay}
+            className="mobile-icon"
+            color="#7DBBE6"
+          />
+        </div>
       </div>
       <div className="item4 carousel-items">
         Some knowlegde and experience working with React.
@@ -118,17 +126,19 @@ const MobileSkills = () => {
           <FontAwesomeIcon
             icon={faGithub}
             className="mobile-icon"
-            color="#f34f29"
+            color="#F4CBB2"
           />
         </div>
       </div>
       <div className="item7 carousel-items">
         How to use Figma to get best out of design.
-        <FontAwesomeIcon
-          icon={faFigma}
-          className="mobile-icon"
-          color="#f34f29"
-        />
+        <div className="carousel-icons">
+          <FontAwesomeIcon
+            icon={faFigma}
+            className="mobile-icon"
+            color="#f34f29"
+          />
+        </div>
       </div>
     </Carousel>
   )
