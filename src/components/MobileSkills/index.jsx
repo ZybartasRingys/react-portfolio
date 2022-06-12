@@ -16,7 +16,11 @@ import {
   faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 
-import { faDisplay } from '@fortawesome/free-solid-svg-icons'
+import {
+  faDisplay,
+  faTabletScreenButton,
+  faMobileScreen,
+} from '@fortawesome/free-solid-svg-icons'
 
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -93,6 +97,18 @@ const MobileSkills = () => {
             className="mobile-icon"
             color="#7DBBE6"
           />
+
+          <FontAwesomeIcon
+            icon={faTabletScreenButton}
+            className="mobile-icon tablet-screen"
+            color="#7DBBE6"
+          />
+
+          <FontAwesomeIcon
+            icon={faMobileScreen}
+            className="mobile-icon mobile-screen"
+            color="#7DBBE6"
+          />
         </div>
       </div>
       <div className="item4 carousel-items">
@@ -136,7 +152,7 @@ const MobileSkills = () => {
           <FontAwesomeIcon
             icon={faFigma}
             className="mobile-icon"
-            color="#f34f29"
+            color="#FFFFFF"
           />
         </div>
       </div>
