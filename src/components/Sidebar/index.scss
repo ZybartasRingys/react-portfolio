@@ -102,6 +102,12 @@
       }
     }
 
+    a.projects-link {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
     a.active {
       svg {
         color: #1ba098;

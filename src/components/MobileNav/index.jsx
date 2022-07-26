@@ -6,6 +6,7 @@ import {
   faUser,
   faEnvelope,
   faGear,
+  faDiagramProject,
 } from '@fortawesome/free-solid-svg-icons'
 import MobileHamburger from '../MobileHamburger'
 
@@ -40,6 +41,13 @@ const MobileNav = () => {
         <NavLink exact="true" className="skills-link" to="/skills">
           <FontAwesomeIcon
             icon={faGear}
+            color="#4d4d4e"
+            className="mobile-nav-links"
+          />
+        </NavLink>
+        <NavLink exact="true" className="projects-link" to="/projects">
+          <FontAwesomeIcon
+            icon={faDiagramProject}
             color="#4d4d4e"
             className="mobile-nav-links"
           />

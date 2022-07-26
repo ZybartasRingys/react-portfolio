@@ -49,7 +49,6 @@ const Skills = () => {
                 Basic knowlegde and experience working with Node JS and MongoDB.
               </li>
               <li>How to use git and github.</li>
-              <li>How to use Figma to get best out of design.</li>
             </ul>
 
             <MobileSkills />

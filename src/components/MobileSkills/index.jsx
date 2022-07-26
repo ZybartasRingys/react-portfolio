@@ -146,16 +146,6 @@ const MobileSkills = () => {
           />
         </div>
       </div>
-      <div className="item7 carousel-items">
-        How to use Figma to get best out of design.
-        <div className="carousel-icons">
-          <FontAwesomeIcon
-            icon={faFigma}
-            className="mobile-icon"
-            color="#FFFFFF"
-          />
-        </div>
-      </div>
     </Carousel>
   )
 }
