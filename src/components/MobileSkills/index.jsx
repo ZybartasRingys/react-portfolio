@@ -13,7 +13,6 @@ import {
   faBootstrap,
   faSass,
   faGithub,
-  faFigma,
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
