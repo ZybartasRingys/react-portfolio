@@ -93,7 +93,7 @@ const Contact = () => {
             <p>
               I'm interested in any opportunities - especially Frontend realated
               positions. However, if you have other question, don't hesitate to
-              contact me using form.
+              contact me using this form.
             </p>
           </div>
         </div>
